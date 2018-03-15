@@ -4,4 +4,4 @@
 
 **Курс**: ПРОДВИНУТЫЙ КУРС ПО ВЕБ-РАЗРАБОТКЕ *(03.2018)*
 
-### Проект   https://oSattarov.github.io/test1
+### Проект  https://github.com/oSattarov/domashka__1.git
