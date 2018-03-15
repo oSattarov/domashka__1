@@ -40,4 +40,4 @@ function slider(){
     }
 }
 
-module.exports = sliderInit;
+module.exports = slider;
