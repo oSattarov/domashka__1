@@ -4,11 +4,12 @@ block variables
     - var title = 'Добро пожоловать'
 
 block content
-    h1 Страница логин
-    form 
-        label(for="email") email
-        input(name="email" id="email")
-        label(for="password") password
-        input(name="password" id="password")
-        button Войти
-    img(src="/assets/images/admin.JPG").admin__img
+    div.wrapper 
+        div.welcome 
+            div.content 
+                div.btn 
+                    div.btn__name Авторизоваться
+                div.window 
+                    div.window__content 
+                        div.dev .dev-desc 
+                            div.dev-desc__avatar 
