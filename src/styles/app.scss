@@ -3,6 +3,12 @@ body{
     background: #ccc;
 }
 
+.admin__img {
+    width: 200px;
+
+}
+
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';
+@import 'common/main';
