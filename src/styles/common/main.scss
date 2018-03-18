@@ -188,39 +188,45 @@ img {
 }
 
 // form btn
-.form__btn {
+.form__btn{
+    
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    
-    button{
+    flex-direction: row;
+    flex: 1;
+    &:first-child{
+        border-bottom-left-radius: 7px;
+    }
+    &:last-child{
+        border-bottom-right-radius: 7px;
+    }
+    .form__button{
+        position: relative;
         width: 50%;
         padding: 10px;
         border-style: none;
         color: #fff;
         background: rgba($color: #00bfa5, $alpha: 0.5);
+        text-decoration: none;
+        text-align: center;
         &:hover {
             background: rgba($color: #0073bf, $alpha: 0.5);
         }
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 34px;
+            border: 1.5px solid silver;
+            left: 100%;
+            top: 0;
+            z-index: 8;
+        }
     }
+    
 }
-.form__button{
-    border-bottom-left-radius: 7px;
-    position: relative;
-
+.form__button:last-child{
     &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        height: 34px;
-        border: 1px solid silver;
-        left: 100%;
-        top: 0;
+        display: none;
     }
 }
-.form__search{
-    border-bottom-right-radius: 7px;
-}
-
-
-
