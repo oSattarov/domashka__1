@@ -1,18 +1,4 @@
-
-.wrapper {
-    min-width: 100%;
-
-    .welcome {
-        display: flex;
-        height: 100vh;
-        align-content: center;
-        justify-content: space-around;
-        background: url("../images/login.jpg");
-        background-size: cover;
-    }
-}
 .content {
-    width: 1800px;
     display: flex;
     flex: wrap;
     align-items: center;
@@ -20,7 +6,7 @@
     flex-direction: column;
 }
 
-.head__link {
+.welcom__link {
     color: #fff;
     border: 1.5px solid #fff;
     border-radius: 5px;

@@ -8,9 +8,28 @@ html, body {
     height: 100vh;
     background: #ccc;
 }
+.wrapper {
+    max-width: 1800vh;
+    width: 100%;
+    .container {
+        display: flex;
+        height: 100vh;
+        align-content: center;
+        justify-content: space-around;
+        background: url("../images/login.jpg");
+        background-size: cover;
+        .content {
+            width: 100%;
+            padding: 10px 15px;
+            
+        }
+        
+    }
+}
 
-@import 'common/menu';
-@import 'common/technologies';
-@import 'common/slider';
+@import 'common/about';
+@import 'common/blog';
+@import 'common/my-works';
 @import 'common/main';
 @import 'common/welcom';
+@import 'common/my';

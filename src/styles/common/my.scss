@@ -1,0 +1,17 @@
+.my {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    background: #efeee9;
+    .about-my {
+        width: 100%;
+
+        .my__content {
+            display: flex;
+            width: 50%;
+    
+        }
+
+    }
+    
+}
