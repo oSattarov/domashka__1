@@ -1,3 +1,226 @@
-.admin__img {
-    float: right;
+
+.wrapper {
+    min-width: 100%;
+
+    .welcome {
+        display: flex;
+        height: 100vh;
+        align-content: center;
+        justify-content: space-around;
+        background: url("../images/login.jpg");
+        background-size: cover;
+    }
 }
+.content {
+    width: 1100px;
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 380px;
+    background: rgba($color: #e5efec, $alpha: 0.7);
+    border-radius: 7px;
+    padding-top: 45px;
+    .title__form {
+        margin-bottom: 30px;
+    }
+}
+
+.form__name {
+    display: flex;
+    align-content: center;
+    .form__avatar {
+        height: 33px;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgba($color: #c3bd9a, $alpha: 0.6);
+    }
+}
+
+.form__password {
+    display: flex;
+    align-content: center;
+    .form__avatar {
+        height: 33px;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgba($color: #c3bd9a, $alpha: 0.6);
+    }
+}
+
+img {
+    width: 12px;
+    height: 12px;
+}
+
+.input {
+    width: 295px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-style: none;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    &:hover {
+        border: 1px solid #00bfa5;
+    }
+}
+
+
+//form checkbox
+.form__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+    &:hover .checkbox__fake {
+        border: 1.5px solid #00bfa5;
+    }
+    .checkbox__title{
+        margin-left: 5px;
+    }
+}
+.checkbox__fake {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    position: relative;
+    border: 1.5px solid #aeb0b1;
+    border-radius: 2px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    &:hover{
+        border: 1.5px solid #00bfa5;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 10%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        transition: width .3s, height .3s;
+    }
+}
+.checkbox__elem:checked {
+    &+.checkbox__fake {
+        background:#00bfa5;
+        border: none;
+        &:after {
+            width: 5px;
+            height: 9px;
+            transform: rotate(45deg);
+            border-bottom: 2px solid  #fff;
+            border-right: 2px solid #fff;
+        }
+    }
+}
+
+
+// form order
+.form-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .order__radio {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        &:hover  .order__radio-fake {
+            border: 1.5px solid #00bfa5;
+        }
+    }
+}
+.order__radio-elem, .checkbox__elem {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+.order__radio-fake {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    border: 1.5px solid #aeb0b1;
+    margin-right: 10px;
+    box-sizing: border-box;
+    
+    &:after{
+        content: ""; 
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background: #00bfa5;
+        transition: width .3s, height .3s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.order__radio-elem:checked {
+    &~.order__radio-title {
+        color: #00bfa5;
+    }
+    &+.order__radio-fake {
+        &:after {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+
+// form btn
+.form__btn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    button{
+        width: 50%;
+        padding: 10px;
+        border-style: none;
+        color: #fff;
+        background: rgba($color: #00bfa5, $alpha: 0.5);
+        &:hover {
+            background: rgba($color: #0073bf, $alpha: 0.5);
+        }
+    }
+}
+.form__button{
+    border-bottom-left-radius: 7px;
+    position: relative;
+
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 34px;
+        border: 1px solid silver;
+        left: 100%;
+        top: 0;
+    }
+}
+.form__search{
+    border-bottom-right-radius: 7px;
+}
+
+
+

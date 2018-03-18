@@ -7,9 +7,30 @@ block content
     div.wrapper 
         div.welcome 
             div.content 
-                div.btn 
-                    div.btn__name Авторизоваться
-                div.window 
-                    div.window__content 
-                        div.dev .dev-desc 
-                            div.dev-desc__avatar 
+                form.form 
+                    h1.title.title__form - АВТОРИЗУЙТЕСЬ -
+                    label(for="name").form__name 
+                        div.form__avatar 
+                            img(src="assets/images/user.svg", alt="")
+                        input(type="name" placeholder="Логин").input
+                    label(for="password").form__password
+                        div.form__avatar 
+                            img(src="assets/images/key.svg", alt="")
+                        input(type="password" placeholder="Пароль").input
+                    label.form__checkbox 
+                        input(name="check" type="checkbox").checkbox__elem 
+                        div.checkbox__fake 
+                        div.checkbox__title Я человек
+                    p.form__text Вы точно не робот?
+                    div.form-order    
+                        label.order__radio 
+                            input(name="rad" type="radio").order__radio-elem
+                            div.order__radio-fake 
+                            div.order__radio-title Да
+                        label.order__radio 
+                            input(type="radio" name="rad").order__radio-elem 
+                            div.order__radio-fake 
+                            div.order__radio-title  Не уверен
+                    div.form__btn
+                        button.form__button НА ГЛАВНАЯ
+                        button.form__search ВОЙТИ

@@ -11,20 +11,57 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Страница логин</h1>
-    <form> 
-      <label for="email">email</label>
-      <input name="email" id="email">
-      <label for="password">password</label>
-      <input name="password" id="password">
-      <button>Войти</button>
-    </form><img class="admin__img" src="/assets/images/admin.JPG">
+    <div class="wrapper"> 
+      <div class="welcome"> 
+        <div class="content"> 
+          <form class="form"> 
+            <h1 class="title title__form">- АВТОРИЗУЙТЕСЬ -</h1>
+            <label class="form__name" for="name"> 
+              <div class="form__avatar"> <img src="assets/images/user.svg" alt=""></div>
+              <input class="input" type="name" placeholder="Логин">
+            </label>
+            <label class="form__password" for="password">
+              <div class="form__avatar"> <img src="assets/images/key.svg" alt=""></div>
+              <input class="input" type="password" placeholder="Пароль">
+            </label>
+            <label class="form__checkbox"> 
+              <input class="checkbox__elem" name="check" type="checkbox">
+              <div class="checkbox__fake"> </div>
+              <div class="checkbox__title">Я человек</div>
+            </label>
+            <p class="form__text">Вы точно не робот?</p>
+            <div class="form-order">   
+              <label class="order__radio"> 
+                <input class="order__radio-elem" name="rad" type="radio">
+                <div class="order__radio-fake"> </div>
+                <div class="order__radio-title">Да</div>
+              </label>
+              <label class="order__radio"> 
+                <input class="order__radio-elem" type="radio" name="rad">
+                <div class="order__radio-fake"> </div>
+                <div class="order__radio-title"> Не уверен</div>
+              </label>
+            </div>
+            <div class="form__btn">
+              <button class="form__button">НА ГЛАВНАЯ</button>
+              <button class="form__search">ВОЙТИ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <h2>Меню </h2>
     <ul class="menu"> 
       <li> <a href="/index.html">Главная</a></li>
       <li> <a href="/about.html">Обо мне </a></li>
       <li> <a href="/my-works.html">Мои работа</a></li>
       <li> <a href="/blog.html">Блог</a></li>
+      <li> <a href="/welcom.html">welcom</a></li>
+    </ul>
+    <ul class="social__list">
+      <li class="social__item"> <a class="social__link" href="#">vk</a></li>
+      <li class="social__item"><a class="social__link" href="#">git-hub</a></li>
+      <li class="social__item"> <a class="social__link" href="#">in</a></li>
     </ul>
   </body>
 </html>

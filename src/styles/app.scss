@@ -1,14 +1,16 @@
-body{
-    margin: 10px;
-    background: #ccc;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.admin__img {
-    width: 200px;
-
+html, body {
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
 }
 
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';
 @import 'common/main';
+@import 'common/welcom';

@@ -1,0 +1,28 @@
+extends ../template
+
+block variables 
+    - var title = 'Welcom'
+
+block content
+    div.wrapper 
+        div.welcome 
+            div.content 
+                a.head__link(href="#") Авторизоваться
+                div.info 
+                    div.info__avatar 
+                        img(src="assets/images/olim.jpg", alt="")
+                    div.info__title 
+                        h1.info__title-name Саттаров Олимжон
+                        p.info__title-text Личный сайт веб разработчика
+                    div.info__link 
+                        a.info__link-vk 
+                            img(src="assets/images/vk.svg", alt="")
+                        a.info__link-git 
+                            img(src="assets/images/github.svg", alt="")
+                        a.info__link-in 
+                            img(src="assets/images/in.svg", alt="")
+                    div.info__btn
+                        button.info__button Мои работы
+                        button.info__button Обо мне
+                        button.info__button Блог
+                div.foot Саттаров Олимжон создано с любовью в LoftShool 2018
