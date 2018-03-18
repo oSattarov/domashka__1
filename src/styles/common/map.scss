@@ -1,0 +1,41 @@
+.maps{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/map.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact {
+    width: 300px;
+    background: rgba($color: #fbfbfb, $alpha: 0.8);
+    border-radius: 5px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    .contact__title {
+        font-size: 35px;
+        font-family: "BERNIERRegular";
+        color: rgb(55, 62, 66);
+        line-height: 1.171;
+        text-align: center;
+    }
+    .contact__list {
+        display: flex;
+        flex-direction: column;
+        .contact__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .contact__text {
+                font-size: 16px;
+                font-family: "Roboto";
+                color: rgba(69, 90, 100, 0.8);
+                line-height: 3;
+                text-align: left;
+                margin-left: 10px;
+            }
+        }
+    }
+}

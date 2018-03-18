@@ -5,45 +5,108 @@ block variables
 
 block content 
     div.wrapper
-        div.container  
-            div.content 
-                header.head 
-                    a.head__link(href="#")
-                        img(src="assets/images/vk.svg", alt="")
-                    a.head__link(href="#") 
+        section.section.hero.hero__works 
+            div.hero__header 
+                ul.social__list 
+                    li.social__item 
+                        a.social__link(href="#")
+                            img(src="assets/images/vk.svg", alt="")
+                    li.social__item 
+                        a.social__link(href="#")
                         img(src="assets/images/github.svg", alt="")
-                    a.head__link(href="#") 
-                        img(src="assets/images/in.svg", alt="")
-                    div.dropdown 
-                        div.drop 
-                        div.drop 
-                        div.drop
-                section.about    
-                    div.about-info 
-                        div.info__avatar 
-                            img(src="assets/images/olim.jpg", alt="").info__avatar-pic
-                        div.info__title 
-                            h1.info__title-name Саттаров Олимжон
-                            p.info__title-text Личный сайт веб разработчика
-                    div.scrol 
-                section.my 
-                    div.about-my 
-                        div.my__content 
-                            h1.about__title - ОБО МНЕ -
-                            div.nav    
-                                div.nav__avatar 
-                                    img.nav__avatar-pic(src="asseta/images/olim.jpg")
-                                div.nav__desc
-                                    h3.nav__title - КТО Я 
-                                    p.nav__text Я веб разработчик из Андижане. Мне 28 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-                        div.my__content 
-                            h3.nav__title - чем я могу быть вам полезен
-                            p.text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-                            h4.title__name Frontend
-                            div.my__content-img 
-                            h4.title__name Backend
-                            div.my__content-img 
-                            h4.title__name WorkFlow
-                            div.my__content-img
-                
-    
+                    li.socila__item 
+                        a.social__link(href="#")
+                            img(src="assets/images/in.svg", alt="")
+                div.hero__menu 
+                    div.drop 
+                    div.drop 
+                    div.drop
+            div.dev__desc 
+                div.dev__desc-avatar
+                    img(src="assets/images/olim.jpg", alt="").dev__desc-pic
+                div.dev__desc-name Саттаров Олимжон
+                div.dev__desc-desc Личный сайт веб разработчика
+            div.down 
+                img.down__icon(src="assets/images/arrow_down.svg") 
+    section.my__work
+        div.about__mywork 
+            div.mywork__desc 
+                h1.title-1 -ОБО МНЕ-
+                div.nav    
+                    div.nav__avatar 
+                        img.nav__avatar-picc(src="assets/images/olim.jpg", alt="")
+                    div.nav__desc
+                        h3.title-3 - КТО Я -
+                        p.nav__text Я веб разработчик из Андижане. Мне 28 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            div.mywork__info
+                h3.mywork__title - чем я могу быть - вам полезен 
+                p.mywork__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                h4.title__name Frontend
+                ul.mywork__list 
+                    li.mywork__item 
+                        img(src="assets/images/HTML5.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/CSS3.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/js.png", alt="")
+                h4.title__name Backend
+                ul.mywork__list 
+                    li.mywork__item 
+                        img(src="assets/images/PHP.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/mysql.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/node.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/mongo.png", alt="")
+                h4.title__name WorkFlow
+                ul.mywork__list.last-list
+                    li.mywork__item 
+                        img(src="assets/images/Git.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/Gulp.png", alt="")
+                    li.mywork__item 
+                        img(src="assets/images/Bower.png", alt="")
+    section.maps 
+        div.contact 
+            h1.contact__title - контакты -
+            ul.contact__list 
+                li.contact__item 
+                    img(src="assets/images/skype.svg", alt="")
+                    p.contact__text olimjon.sattarov
+                li.contact__item 
+                    img(src="assets/images/envelope.svg", alt="")
+                    p.contact__text osattarov23@gmail.com 
+                li.contact__item 
+                    img(src="assets/images/phone.svg", alt="")
+                    p.contact__text +7 910 449 83 33
+                li.contact__item 
+                    img(src="assets/images/map_marker.svg", alt="")
+                    p.contact__text Москва
+    footer.foot 
+        ul.foot__list 
+            li.foot__item 
+                ul.footmenu__list 
+                    li.footmenu__item
+                        a(href="/my-works.html").footmenu__link Мои работы
+                    li.footmenu__item
+                        a(href="/about.html").footmenu__link Обо мне
+                    li.footmenu__item
+                        a(href="/blog.html").footmenu__link Блог
+                    li.footmenu__item
+                        a(href="/welcome.html").footmenu__link Авторизация
+            li.foot__item 
+                ul.foot__social-list 
+                    li.foot__social-item 
+                        a(href="#").foot__link 
+                            img(src="assets/images/vk.svg", alt="")
+                    li.foot__social-item 
+                        a(href="#").foot__link 
+                            img(src="assets/images/github.svg", alt="")
+                    li.foot__social-item 
+                        a(href="#").foot__link 
+                            img(src="assets/images/in.svg", alt="")
+        hr.line
+        div.foot__desc 
+            div.foot__desc-text Я веб-разработчик из Андижане, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+            div.foot__desc-info © Владимир Астахов | создано с любовью в LoftSchool | 2016

@@ -5,7 +5,7 @@
 
 html, body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #ccc;
 }
 .wrapper {
@@ -13,7 +13,7 @@ html, body {
     width: 100%;
     .container {
         display: flex;
-        height: 100vh;
+        min-height: 100vh;
         align-content: center;
         justify-content: space-around;
         background: url("../images/login.jpg");
@@ -33,3 +33,5 @@ html, body {
 @import 'common/main';
 @import 'common/welcom';
 @import 'common/my';
+@import 'common/map';
+@import 'common/foot';

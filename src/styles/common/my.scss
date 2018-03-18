@@ -1,17 +1,120 @@
-.my {
+.my__work {
     width: 100%;
     min-height: 650px;
     display: flex;
     background: #efeee9;
-    .about-my {
-        width: 100%;
-
-        .my__content {
+    .about__mywork {
+        width: 1800px;
+        display: flex;
+        align-items: flex-start;
+        .mywork__desc {
+            position: relative;
             display: flex;
             width: 50%;
-    
+            padding: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .title-1 {
+                width: 50%;
+                font-size: 62.792px;
+                font-family: "Myriad Pro";
+                color: rgb(55, 62, 66);
+                line-height: 1.048;
+                text-align: center;
+            }
+            .nav {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .nav__avatar {
+                    width: 100%;
+                    height: 300px;
+                    overflow: hidden;
+                    .nav__avatar-picc {
+                        height: 300px;
+                        width: auto;
+                        transform: rotate(180deg);
+                        
+                    }
+                }
+                .nav__desc {
+                    margin-top: 20px;
+                    width: 100%;
+                    .title-3 {
+                        text-align: center;
+                        font-size: 35px;
+                        font-family: "Myriad Pro";
+                        color: rgb(69, 90, 100);
+                        line-height: 1.171;
+                        
+                    }
+                    .nav__text {
+                        font-size: 16px;
+                        font-family: "Roboto";
+                        color: rgb(69, 90, 100);
+                        line-height: 1.5;
+                        text-align: left;
+                        
+                    }
+                      
+                }
+            }
+        }
+        .mywork__info {
+            position: relative;
+            display: flex;
+            background: #eeebdf;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            padding: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            }
+            &:last-child {
+                margin-bottom: 50px;
+            }
+            .mywork__title {
+                width: 400px;
+                font-size: 35px;
+                font-family: "Myriad Pro";
+                color: rgb(69, 90, 100);
+                line-height: 1.171; 
+                margin: auto;
+                text-align: center;
+                margin-bottom: 10px;   
+                text-transform: uppercase;                              
+            }
+            .mywork__text {
+                font-size: 16px;
+                font-family: "Roboto";
+                color: rgb(69, 90, 100);
+                line-height: 1.5;
+                text-align: left;
+            }
+            .title__name {
+                font-size: 28px;
+                font-family: "Roboto";
+                color: rgb(69, 90, 100);
+                line-height: 1.143;
+                text-align: center;
+                margin-bottom: 10px;
+                margin-top: 30px;               
+            }
+
         }
 
     }
     
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .mywork__item {
+        margin-right: 40px;
+    }
+
 }

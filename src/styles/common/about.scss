@@ -1,18 +1,35 @@
-.head {
+.hero {
     position: relative;
     width: 100%;
+    min-height: 650px;
+    background-image: url("../images/login.jpg");
     padding: 10px 0;
     display: flex;
-    .head__link {
-        text-decoration: none;
-        height: 35px;
-        width: 35px;
-        margin: 0 10px;
-        
+    flex-direction: column;
+    .hero__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    .dropdown {
-        margin-left: auto;
+    .social__list {
+        width: 200px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .social__item {
+
+            .social__link {
+                text-decoration: none;
+                height: 35px;
+                width: 35px;
+                
+            }
+        }
+    }
+    .hero__menu {
         display: inline-flex;
+        margin-right: 20px;
         height: 35px;
         flex-direction: column;
         align-items: center;
@@ -34,36 +51,44 @@
 }
 
 // info block
-.about-info {
+.dev__desc {
     position: relative;
     display: flex;
     flex: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 380px;
-    
+    margin-top: 70px;
 }
-.info__avatar {
+.dev__desc-avatar {
     width: 145px;
     height: 145px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 30px;
-    .info__avatar-pic {
+    .dev__desc-pic {
         height: 150px;
         width: auto;
         transform: rotate(180deg);
     }
 }
-.info__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    color: #fff;
-    .info__title-name {
-        margin-bottom: 10px;
-    }
+.dev__desc-name {
+    font-size: 35px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 2.832;
+    text-align: center;
+            
 }
-
+.dev__desc-desc {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    text-align: center;
+         
+}
+.down {
+    text-align: center;
+    margin-top: 150px;
+}
