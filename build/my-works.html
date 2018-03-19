@@ -11,6 +11,101 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Мои работы </h1>
+    <div class="wrapper">
+      <section class="section hero hero__works"> 
+        <div class="hero__header"> 
+          <ul class="social__list"> 
+            <li class="social__item"> <a class="social__link" href="#"><img src="assets/images/vk.svg" alt=""></a></li>
+            <li class="social__item"> <a class="social__link" href="#"></a><img src="assets/images/github.svg" alt=""></li>
+            <li class="socila__item"> <a class="social__link" href="#"><img src="assets/images/in.svg" alt=""></a></li>
+          </ul>
+          <div class="hero__menu"> 
+            <div class="drop"> </div>
+            <div class="drop"> </div>
+            <div class="drop"></div>
+          </div>
+        </div>
+        <div class="dev__desc"> 
+          <div class="dev__desc-avatar"><img class="dev__desc-pic" src="assets/images/olim.jpg" alt=""></div>
+          <div class="dev__desc-name">Саттаров Олимжон</div>
+          <div class="dev__desc-desc">Личный сайт веб разработчика</div>
+        </div>
+        <div class="down"> <img class="down__icon" src="assets/images/arrow_down.svg"></div>
+      </section>
+    </div>
+    <section class="section work-slider"> 
+      <div class="slider__content-title"> 
+        <h1 class="slider__title">- Мои работы -</h1>
+      </div>
+      <div class="slider__content-work"> 
+        <div class="slider__work"> 
+          <div class="slider__nav"> 
+            <h2 class="slider__nav-title">-Сайт школы онлайн- Образования</h2>
+            <hr class="slider__line">
+            <p class="slider__text">HTML , CSS, JAVASCRIPT</p>
+            <hr class="slider__line"><a class="slider__link" href="#"> </a>
+          </div>
+        </div>
+        <div class="slider__info"> 
+          <div class="slider__info-pic"> <img class="slider__info-images" src="assets/images/imgloft.jpg" alt=""></div>
+          <div class="slider__info-slider"> <img class="slider__info-img" src="assets/images/imgloft2.jpg" alt=""><img class="slider__info-img" src="assets/images/imgloft3.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="section reviews"> 
+      <div class="reviews__content-title"> 
+        <h1 class="reviews__title">- что обо мне говорят -</h1>
+      </div>
+      <ul class="reviews__list"> 
+        <li class="reviews__item"> <img class="reviews__item-pic" src="assets/images/zat.jpg" alt="">
+          <p class="reviews__item-text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
+          <div class="reviews__item-avatar"> 
+            <div class="item-avatar"> <img class="item-avatar__pic" src="assets/images/8.jpg" alt=""></div>
+            <p class="item-text">Ковальчук Дмитрий основатель Loftschool</p>
+          </div>
+        </li>
+        <li class="reviews__item"> <img class="reviews__item-pic" src="assets/images/zat.jpg" alt="">
+          <p class="reviews__item-text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
+          <div class="reviews__item-avatar"> 
+            <div class="item-avatar"> <img class="item-avatar__pic" src="assets/images/8.jpg" alt=""></div>
+            <p class="item-text">Ковальчук Дмитрий основатель Loftschool</p>
+          </div>
+        </li>
+      </ul>
+      <form class="myform"> 
+        <h1 class="myform__title">-Связаться со мной-</h1>
+        <input class="myform__input" type="text" placeholder="Имя">
+        <input class="myform__input" type="text" placeholder="Email">
+        <textarea class="myform__textarea" name="text" cols="30" rows="10" placeholder="Ваше сообшение"></textarea>
+        <div class="btn"> 
+          <button class="myform__btn" type="submit">Отправить</button>
+          <button class="myform__btn" type="reset">Очистить</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <ul class="foot__list"> 
+        <li class="foot__item"> 
+          <ul class="footmenu__list"> 
+            <li class="footmenu__item"><a class="footmenu__link" href="/my-works.html">Мои работы</a></li>
+            <li class="footmenu__item"><a class="footmenu__link" href="/about.html">Обо мне</a></li>
+            <li class="footmenu__item"><a class="footmenu__link" href="/blog.html">Блог</a></li>
+            <li class="footmenu__item"><a class="footmenu__link" href="/welcome.html">Авторизация</a></li>
+          </ul>
+        </li>
+        <li class="foot__item"> 
+          <ul class="foot__social-list"> 
+            <li class="foot__social-item"> <a class="foot__link" href="#"> <img src="assets/images/vk.svg" alt=""></a></li>
+            <li class="foot__social-item"> <a class="foot__link" href="#"> <img src="assets/images/github.svg" alt=""></a></li>
+            <li class="foot__social-item"> <a class="foot__link" href="#"> <img src="assets/images/in.svg" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+      <hr class="line">
+      <div class="foot__descc"> 
+        <div class="foot__desc-text">Я веб-разработчик из Андижане, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+        <div class="foot__desc-info">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+      </div>
+    </footer>
   </body>
 </html>

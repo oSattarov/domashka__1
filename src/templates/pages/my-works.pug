@@ -1,8 +1,100 @@
 extends ../template 
 
 block variables 
-    - var title = 'Мои работы'
+    - var title = 'Мои работы' 
 
 block content 
-    h1 Мои работы 
-    include ../common/slider.pug
+    div.wrapper
+        section.section.hero.hero__works 
+            div.hero__header 
+                ul.social__list 
+                    li.social__item 
+                        a.social__link(href="#")
+                            img(src="assets/images/vk.svg", alt="")
+                    li.social__item 
+                        a.social__link(href="#")
+                        img(src="assets/images/github.svg", alt="")
+                    li.socila__item 
+                        a.social__link(href="#")
+                            img(src="assets/images/in.svg", alt="")
+                div.hero__menu 
+                    div.drop 
+                    div.drop 
+                    div.drop
+            div.dev__desc 
+                div.dev__desc-avatar
+                    img(src="assets/images/olim.jpg", alt="").dev__desc-pic
+                div.dev__desc-name Саттаров Олимжон
+                div.dev__desc-desc Личный сайт веб разработчика
+            div.down 
+                img.down__icon(src="assets/images/arrow_down.svg") 
+    section.section.work-slider 
+        div.slider__content-title 
+            h1.slider__title - Мои работы -
+        div.slider__content-work 
+            div.slider__work 
+                div.slider__nav 
+                    h2.slider__nav-title -Сайт школы онлайн- Образования
+                    hr.slider__line 
+                    p.slider__text HTML , CSS, JAVASCRIPT
+                    hr.slider__line 
+                    a(href="#").slider__link 
+            div.slider__info 
+                div.slider__info-pic 
+                    img.slider__info-images(src="assets/images/imgloft.jpg", alt="")
+                div.slider__info-slider 
+                    img(src="assets/images/imgloft2.jpg", alt="").slider__info-img 
+                    img(src="assets/images/imgloft3.jpg", alt="").slider__info-img         
+    section.section.reviews  
+        div.reviews__content-title 
+            h1.reviews__title - что обо мне говорят -
+        ul.reviews__list 
+            li.reviews__item 
+                img(src="assets/images/zat.jpg", alt="").reviews__item-pic
+                p.reviews__item-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                div.reviews__item-avatar 
+                    div.item-avatar 
+                        img(src="assets/images/8.jpg", alt="").item-avatar__pic
+                    p.item-text Ковальчук Дмитрий основатель Loftschool
+            li.reviews__item 
+                img(src="assets/images/zat.jpg", alt="").reviews__item-pic
+                p.reviews__item-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                div.reviews__item-avatar 
+                    div.item-avatar 
+                        img(src="assets/images/8.jpg", alt="").item-avatar__pic
+                    p.item-text Ковальчук Дмитрий основатель Loftschool
+        form.myform 
+            h1.myform__title -Связаться со мной-
+            input(type="text" placeholder="Имя").myform__input
+            input(type="text" placeholder="Email").myform__input
+            textarea(name="text", cols="30", rows="10" placeholder="Ваше сообшение").myform__textarea
+            div.btn 
+                button(type="submit").myform__btn Отправить
+                button(type="reset").myform__btn Очистить
+    footer.footer
+        ul.foot__list 
+            li.foot__item 
+                ul.footmenu__list 
+                    li.footmenu__item
+                        a(href="/my-works.html").footmenu__link Мои работы
+                    li.footmenu__item
+                        a(href="/about.html").footmenu__link Обо мне
+                    li.footmenu__item
+                        a(href="/blog.html").footmenu__link Блог
+                    li.footmenu__item
+                        a(href="/welcome.html").footmenu__link Авторизация
+            li.foot__item 
+                ul.foot__social-list 
+                    li.foot__social-item 
+                        a(href="#").foot__link 
+                            img(src="assets/images/vk.svg", alt="")
+                    li.foot__social-item 
+                        a(href="#").foot__link 
+                            img(src="assets/images/github.svg", alt="")
+                    li.foot__social-item 
+                        a(href="#").foot__link 
+                            img(src="assets/images/in.svg", alt="")
+        hr.line
+        div.foot__descc 
+            div.foot__desc-text Я веб-разработчик из Андижане, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+            div.foot__desc-info © Владимир Астахов | создано с любовью в LoftSchool | 2016
