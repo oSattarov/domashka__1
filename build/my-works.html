@@ -7,8 +7,9 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale-1" name="viewport">
     <meta content="ie=edge" http-equive="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/styles/app.min.css">
-    <script src="/assets/scripts/bundle.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,10 +32,16 @@
           <div class="dev__desc-desc">Личный сайт веб разработчика</div>
         </div>
         <div class="down"> <img class="down__icon" src="assets/images/arrow_down.svg"></div>
+        <div class="box">
+          <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="left-traingle" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+            <polygon class="right-traingle" points="1000,0   1000,86   500,86   500,75.5"> </polygon>
+          </svg>
+        </div>
       </section>
     </div>
     <section class="section work-slider"> 
-      <div class="slider__content-title"> 
+      <div class="slider__content-title">
         <h1 class="slider__title">- Мои работы -</h1>
       </div>
       <div class="slider__content-work"> 
@@ -43,32 +50,38 @@
             <h2 class="slider__nav-title">-Сайт школы онлайн- Образования</h2>
             <hr class="slider__line">
             <p class="slider__text">HTML , CSS, JAVASCRIPT</p>
-            <hr class="slider__line"><a class="slider__link" href="#"> </a>
+            <hr class="slider__line"><a class="slider__link" href="#"> 
+              <div class="slider__link-icon">
+                <svg class="icons-link" width="20" height="19" fill="#fff">
+                  <use xlink:href="img/symbol/sprite.svg#icons--link"></use>
+                </svg>
+              </div>
+              <div class="slider__link-text">Посмотреть сайт</div></a>
           </div>
         </div>
         <div class="slider__info"> 
-          <div class="slider__info-pic"> <img class="slider__info-images" src="assets/images/imgloft.jpg" alt=""></div>
+          <div class="slider__info-pic"> <img class="slider__info-images" src="assets/images/unit.png" alt=""></div>
           <div class="slider__info-slider"> <img class="slider__info-img" src="assets/images/imgloft2.jpg" alt=""><img class="slider__info-img" src="assets/images/imgloft3.jpg" alt=""></div>
         </div>
       </div>
     </section>
     <section class="section reviews"> 
       <div class="reviews__content-title"> 
-        <h1 class="reviews__title">- что обо мне говорят -</h1>
+        <h1 class="reviews__title">- что обо мне - говорят </h1>
       </div>
       <ul class="reviews__list"> 
-        <li class="reviews__item"> <img class="reviews__item-pic" src="assets/images/zat.jpg" alt="">
+        <li class="reviews__item"> <img class="reviews__item-pic" src="assets/images/zap.jpg" alt="">
           <p class="reviews__item-text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
           <div class="reviews__item-avatar"> 
             <div class="item-avatar"> <img class="item-avatar__pic" src="assets/images/8.jpg" alt=""></div>
             <p class="item-text">Ковальчук Дмитрий основатель Loftschool</p>
           </div>
         </li>
-        <li class="reviews__item"> <img class="reviews__item-pic" src="assets/images/zat.jpg" alt="">
-          <p class="reviews__item-text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
+        <li class="reviews__item"> <img class="reviews__item-pic" src="assets/images/zap.jpg" alt="">
+          <p class="reviews__item-text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
           <div class="reviews__item-avatar"> 
-            <div class="item-avatar"> <img class="item-avatar__pic" src="assets/images/8.jpg" alt=""></div>
-            <p class="item-text">Ковальчук Дмитрий основатель Loftschool</p>
+            <div class="item-avatar"> <img class="item-avatar__pic" src="assets/images/9.jpg" alt=""></div>
+            <p class="item-text">Сабанцев Владимир преподаватель</p>
           </div>
         </li>
       </ul>
@@ -78,10 +91,11 @@
         <input class="myform__input" type="text" placeholder="Email">
         <textarea class="myform__textarea" name="text" cols="30" rows="10" placeholder="Ваше сообшение"></textarea>
         <div class="btn"> 
-          <button class="myform__btn" type="submit">Отправить</button>
-          <button class="myform__btn" type="reset">Очистить</button>
+          <button class="myform__btn first" type="submit">Отправить</button>
+          <button class="myform__btn last" type="reset">Очистить</button>
         </div>
       </form>
+      <div class="down up"> <img class="down__icon" src="assets/images/portf_arrow_up.svg"></div>
     </section>
     <footer class="footer">
       <ul class="foot__list"> 

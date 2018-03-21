@@ -27,9 +27,13 @@ block content
                 div.dev__desc-name Саттаров Олимжон
                 div.dev__desc-desc Личный сайт веб разработчика
             div.down 
-                img.down__icon(src="assets/images/arrow_down.svg") 
+                img.down__icon(src="assets/images/arrow_down.svg")
+            .box
+                svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                    polygon.left-traingle(points='0,0   0,86   500.8,86   500.8,75.5')
+                    polygon.right-traingle(points='1000,0   1000,86   500,86   500,75.5') 
     section.section.work-slider 
-        div.slider__content-title 
+        div.slider__content-title
             h1.slider__title - Мои работы -
         div.slider__content-work 
             div.slider__work 
@@ -39,38 +43,45 @@ block content
                     p.slider__text HTML , CSS, JAVASCRIPT
                     hr.slider__line 
                     a(href="#").slider__link 
+                        div.slider__link-icon
+                            svg.icons-link(width='20', height='19', fill='#fff')
+                                use(xlink:href='img/symbol/sprite.svg#icons--link')
+                        div.slider__link-text Посмотреть сайт
+            
             div.slider__info 
                 div.slider__info-pic 
-                    img.slider__info-images(src="assets/images/imgloft.jpg", alt="")
+                    img.slider__info-images(src="assets/images/unit.png", alt="")
                 div.slider__info-slider 
                     img(src="assets/images/imgloft2.jpg", alt="").slider__info-img 
                     img(src="assets/images/imgloft3.jpg", alt="").slider__info-img         
     section.section.reviews  
         div.reviews__content-title 
-            h1.reviews__title - что обо мне говорят -
+            h1.reviews__title - что обо мне - говорят 
         ul.reviews__list 
             li.reviews__item 
-                img(src="assets/images/zat.jpg", alt="").reviews__item-pic
+                img(src="assets/images/zap.jpg", alt="").reviews__item-pic
                 p.reviews__item-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                 div.reviews__item-avatar 
                     div.item-avatar 
                         img(src="assets/images/8.jpg", alt="").item-avatar__pic
                     p.item-text Ковальчук Дмитрий основатель Loftschool
             li.reviews__item 
-                img(src="assets/images/zat.jpg", alt="").reviews__item-pic
-                p.reviews__item-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                img(src="assets/images/zap.jpg", alt="").reviews__item-pic
+                p.reviews__item-text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
                 div.reviews__item-avatar 
                     div.item-avatar 
-                        img(src="assets/images/8.jpg", alt="").item-avatar__pic
-                    p.item-text Ковальчук Дмитрий основатель Loftschool
+                        img(src="assets/images/9.jpg", alt="").item-avatar__pic
+                    p.item-text Сабанцев Владимир преподаватель
         form.myform 
             h1.myform__title -Связаться со мной-
             input(type="text" placeholder="Имя").myform__input
             input(type="text" placeholder="Email").myform__input
             textarea(name="text", cols="30", rows="10" placeholder="Ваше сообшение").myform__textarea
             div.btn 
-                button(type="submit").myform__btn Отправить
-                button(type="reset").myform__btn Очистить
+                button(type="submit").myform__btn.first Отправить
+                button(type="reset").myform__btn.last Очистить
+        div.down.up 
+                img.down__icon(src="assets/images/portf_arrow_up.svg")
     footer.footer
         ul.foot__list 
             li.foot__item 

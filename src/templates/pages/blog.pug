@@ -26,14 +26,17 @@ block content
                     img(src="assets/images/olim.jpg", alt="").dev__desc-pic
                 div.dev__desc-name - БЛОГ -
                 div.dev__desc-desc Статьи, которые я написал
-            div.down 
+            .box
+                svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                    polygon.left-traingle(points='0,0   0,86   500.8,86   500.8,75.5')
+                    polygon.right-traingle(points='1000,0   1000,86   500,86   500,75.5')
             
     section.block 
         div.block-container
             div.block__nav 
                 ul.block__list 
                     li.block__item 
-                        a(href="#").block__link Самое важное в SASS
+                        a(href="#").block__link.active Самое важное в SASS
                     li.block__item 
                         a(href="#").block__link Приёмы в вёрстке, без которых не обходится ни один сайт
                     li.block__item 
@@ -55,13 +58,13 @@ block content
             li.foot__item 
                 ul.footmenu__list 
                     li.footmenu__item
-                        a(href="/my-works.html").footmenu__link Мои работы
+                        a(href="my-works.html").footmenu__link Мои работы
                     li.footmenu__item
-                        a(href="/about.html").footmenu__link Обо мне
+                        a(href="about.html").footmenu__link Обо мне
                     li.footmenu__item
-                        a(href="/blog.html").footmenu__link Блог
+                        a(href="blog.html").footmenu__link Блог
                     li.footmenu__item
-                        a(href="/welcome.html").footmenu__link Авторизация
+                        a(href="welcome.html").footmenu__link Авторизация
             li.foot__item 
                 ul.foot__social-list 
                     li.foot__social-item 

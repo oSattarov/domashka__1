@@ -11,7 +11,7 @@
             position: relative;
             display: flex;
             width: 50%;
-            padding: 10px;
+            padding: 0 10px;
             align-items: flex-start;
             justify-content: flex-start;
             .title-1 {
@@ -21,6 +21,7 @@
                 color: rgb(55, 62, 66);
                 line-height: 1.048;
                 text-align: center;
+                margin-top: 0;
             }
             .nav {
                 width: 50%;
@@ -68,7 +69,7 @@
             flex-direction: column;
             width: 50%;
             height: 100%;
-            padding: 20px;
+            padding: 0 20px;
             align-items: flex-start;
             justify-content: flex-start;
             }
@@ -83,7 +84,8 @@
                 line-height: 1.171; 
                 margin: auto;
                 text-align: center;
-                margin-bottom: 10px;   
+                margin-bottom: 10px;  
+                margin-top:0; 
                 text-transform: uppercase;                              
             }
             .mywork__text {

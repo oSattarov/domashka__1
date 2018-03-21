@@ -8,6 +8,7 @@ const browserSync = require('browser-sync').create();
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
+// const svgSprite = require('gulp-svg-sprite');
 
 
 
@@ -30,6 +31,10 @@ const paths = {
         src: 'src/scripts/**/*.js',
         dest: 'build/assets/scripts/'
     },
+    fonts: {
+        src: "src/fonts/**/*.*",
+        dest: "build/assets/fonts/"
+    },
 }
 
 
@@ -37,6 +42,9 @@ const paths = {
 function images(){
     return gulp.src(paths.images.src)
         .pipe(gulp.dest(paths.images.dest));
+}
+function fonts() {
+    return gulp.src(paths.fonts.src).pipe(gulp.dest(paths.fonts.dest));
 }
 
 
@@ -46,6 +54,8 @@ function watch() {
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
     gulp.watch(paths.scripts.src, scripts);
+    gulp.watch(paths.fonts.src, fonts);
+
 }
 
 // следит за build и релоадим браузер 
@@ -55,6 +65,35 @@ function server(){
     });
     browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
 }
+
+//sprite
+// function svg() {
+//     return gulp.src('./src/images/**/*.svg')
+//         .pipe(svgmin({
+//             js2svg: {
+//                 pretty: true
+//             }
+//         }))        
+//         .pipe(cheerio({
+//             run: function ($) {
+//                 $('[fill]').removeAttr('fill');
+//                 $('[stroke]').removeAttr('stroke');
+//                 $('[style]').removeAttr('style');
+//             }
+//         }))
+//         .pipe(replace('&gt;', '>'))
+//         .pipe(svgSprite({
+//             mode: {
+//                 symbol: {
+//                     sprite: "sprite.svg",
+//                     example: {
+//                         dest: 'spriteSvgDemo.html'
+//                     }
+//                 }
+//             }
+//         }))
+//         .pipe(gulp.dest(paths.images.dest));
+// }
 
 
 // очистка 
@@ -90,10 +129,12 @@ exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
+// exports.svg = svg;
+exports.fonts = fonts;
 
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, scripts),
+    gulp.parallel(styles, templates, images, scripts, fonts),
     gulp.parallel(watch, server)
 ));

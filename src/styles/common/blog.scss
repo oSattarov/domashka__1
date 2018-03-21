@@ -30,34 +30,28 @@
         width: 100%;
         flex-direction: column;
         .block__item {
-            height: 50px;
             margin-bottom: 10px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            &:after{
-                content: "";
-                display: block;
-                width: 1px;
-                height: 50px;
-                border: 1px solid #00bfa5;
-                background: #00bfa5;
-                margin-left: 10px;
-                display: none;
-            }
+            
             .block__link {
                 font-size: 16px;
                 font-family: "Roboto";
                 line-height: 1.6;
                 color: rgb(69, 90, 100);
                 text-align: right;
+                height: 45px;
+                padding-right: 10px;
                 &:hover{
                     color: #00bfa5;
-                    
+                    border-right: 2px solid #00bfa5;
                 }  
-                &:hover + .block__item:after {
-                    display: block;
-                }
+                
+            }
+            .active {
+                color: #00bfa5;
+                border-right: 2px solid #00bfa5;   
             }
         }
     }

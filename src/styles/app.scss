@@ -1,3 +1,20 @@
+@import 'common/fonts';
+@import 'common/normalize';
+
+// block 
+@import 'common/about';
+@import 'common/blog';
+@import 'common/my-works';
+@import 'common/main';
+@import 'common/welcom';
+@import 'common/my';
+@import 'common/map';
+@import 'common/foot';
+@import 'common/header';
+@import 'common/reviews';
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,13 +44,3 @@ html, body {
     }
 }
 
-@import 'common/about';
-@import 'common/blog';
-@import 'common/my-works';
-@import 'common/main';
-@import 'common/welcom';
-@import 'common/my';
-@import 'common/map';
-@import 'common/foot';
-@import 'common/header';
-@import 'common/reviews'

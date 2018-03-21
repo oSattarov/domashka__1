@@ -1,0 +1,137 @@
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../images/bg.png');
+    // background-size: cover;
+
+    .reviews__content-title {
+        background-image: url('../images/works_header.svg');
+        background-repeat: no-repeat;
+        width: 35%;
+        margin-bottom: 50px;
+        .reviews__title {
+            font-size: 62.792px;
+            font-family: "BERNIERRegular";
+            color: rgb(55, 62, 66);
+            line-height: 1.048;
+            text-align: center;
+        }
+    }
+    .reviews__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        .reviews__item {
+            display: flex;
+            width: 47%;
+            align-items: flex-start;
+            flex-direction: column;
+            .reviews__item-text {
+                font-size: 16px;
+                font-family: "Roboto";
+                color: rgb(69, 90, 100);
+                line-height: 1.625;
+                text-align: left; 
+                margin: 10px 0;
+            }
+            .reviews__item-avatar {
+                display: flex;
+                align-items: center;
+
+                .item-avatar {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 5%;
+                }
+                .item-text {
+                    width: 180px;
+                    font-size: 16px;
+                    font-family: "Roboto";
+                    color: rgb(32, 181, 161);
+                    font-weight: bold;
+                    line-height: 1.5;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+.myform {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 380px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0;
+    margin: 180px 0 0px;
+    background-image: url("../images/razmit.jpg");
+    .myform__title {
+        width: 90%;
+        font-size: 35px;
+        font-family: "BERNIERRegular";
+        color: rgb(69, 90, 100);
+        line-height: 1.171;
+        text-align: center;
+            
+    }
+    .myform__input {
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+        // height: 45px;
+        border-style: none;
+        margin-bottom: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .myform__textarea {
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+        height: 140px;
+        border-style: none;
+        margin-bottom: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .myform__btn {
+        width: 50%;
+        text-align: center; 
+        padding: 8px 0;
+        font-size: 16px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        line-height: 2.257;
+        text-align: center;
+        background: #26bba9;
+        border-style: none;
+        &:hover {
+            background: #26908e;
+        }
+    }
+    .first {
+        border-right: 1px solid silver;
+        border-bottom-left-radius: 5px;
+    }
+    .last {
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid silver;
+    }
+}
+.up {
+    margin: 50px 0 150px 0;
+}

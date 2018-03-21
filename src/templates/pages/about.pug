@@ -28,6 +28,10 @@ block content
                 div.dev__desc-desc Личный сайт веб разработчика
             div.down 
                 img.down__icon(src="assets/images/arrow_down.svg") 
+            .box
+                svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                    polygon.left-traingle(points='0,0   0,86   500.8,86   500.8,75.5')
+                    polygon.right-traingle(points='1000,0   1000,86   500,86   500,75.5')
     section.my__work
         div.about__mywork 
             div.mywork__desc 
@@ -88,13 +92,13 @@ block content
             li.foot__item 
                 ul.footmenu__list 
                     li.footmenu__item
-                        a(href="/my-works.html").footmenu__link Мои работы
+                        a(href="my-works.html").footmenu__link Мои работы
                     li.footmenu__item
-                        a(href="/about.html").footmenu__link Обо мне
+                        a(href="about.html").footmenu__link Обо мне
                     li.footmenu__item
-                        a(href="/blog.html").footmenu__link Блог
+                        a(href="blog.html").footmenu__link Блог
                     li.footmenu__item
-                        a(href="/welcome.html").footmenu__link Авторизация
+                        a(href="welcome.html").footmenu__link Авторизация
             li.foot__item 
                 ul.foot__social-list 
                     li.foot__social-item 
