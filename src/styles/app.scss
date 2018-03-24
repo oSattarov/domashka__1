@@ -1,7 +1,22 @@
-@import 'common/fonts';
-@import 'common/normalize';
+// src 
+@import 'normalize';
 
-// block 
+//  base 
+@import 'base/fonts';
+@import 'base/base';
+
+//config
+@import "config/mixins.scss";
+
+//resolutions
+$retina: 1800px;
+$tablets: 768px;
+$phones: 480px;
+
+// misc  
+@import 'misc/media';
+
+// common 
 @import 'common/about';
 @import 'common/blog';
 @import 'common/my-works';
@@ -14,33 +29,4 @@
 @import 'common/reviews';
 
 
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    background: #ccc;
-}
-.wrapper {
-    max-width: 1800vh;
-    width: 100%;
-    .container {
-        display: flex;
-        min-height: 100vh;
-        align-content: center;
-        justify-content: space-around;
-        background: url("../images/login.jpg");
-        background-size: cover;
-        .content {
-            width: 100%;
-            padding: 10px 15px;
-            
-        }
-        
-    }
-}
 
