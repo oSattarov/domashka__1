@@ -1,22 +1,24 @@
+@import '../misc/media';
+
 .my__work {
     width: 100%;
-    min-height: 650px;
+    min-height: rem(650px);
     display: flex;
     background: #efeee9;
     .about__mywork {
-        width: 1800px;
+        width: rem(1800px);
         display: flex;
         align-items: flex-start;
         .mywork__desc {
             position: relative;
             display: flex;
             width: 50%;
-            padding: 0 10px;
+            padding: 0 rem(10px);
             align-items: flex-start;
             justify-content: flex-start;
             .title-1 {
                 width: 50%;
-                font-size: 62.792px;
+                font-size: rem(63px);
                 font-family: "Roboto";
                 color: rgb(55, 62, 66);
                 line-height: 1.048;
@@ -30,28 +32,28 @@
                 align-items: center;
                 .nav__avatar {
                     width: 100%;
-                    height: 300px;
+                    height: rem(300px);
                     overflow: hidden;
                     .nav__avatar-picc {
-                        height: 300px;
+                        height: rem(300px);
                         width: auto;
                         transform: rotate(180deg);
                         
                     }
                 }
                 .nav__desc {
-                    margin-top: 20px;
+                    margin-top: rem(20px);
                     width: 100%;
                     .title-3 {
                         text-align: center;
-                        font-size: 35px;
+                        font-size: rem(35px);
                         font-family: "Roboto";
                         color: rgb(69, 90, 100);
                         line-height: 1.171;
                         
                     }
                     .nav__text {
-                        font-size: 16px;
+                        font-size: rem(16px);
                         font-family: "Roboto";
                         color: rgb(69, 90, 100);
                         line-height: 1.5;
@@ -69,40 +71,40 @@
             flex-direction: column;
             width: 50%;
             height: 100%;
-            padding: 0 20px;
+            padding: 0 rem(20px);
             align-items: flex-start;
             justify-content: flex-start;
             }
             &:last-child {
-                margin-bottom: 50px;
+                margin-bottom: rem(50px);
             }
             .mywork__title {
-                width: 400px;
-                font-size: 35px;
+                width: rem(400px);
+                font-size: rem(35px);
                 font-family: "Roboto";
                 color: rgb(69, 90, 100);
                 line-height: 1.171; 
                 margin: auto;
                 text-align: center;
-                margin-bottom: 10px;  
+                margin-bottom: rem(10px);  
                 margin-top:0; 
                 text-transform: uppercase;                              
             }
             .mywork__text {
-                font-size: 16px;
+                font-size: rem(16px);
                 font-family: "Roboto";
                 color: rgb(69, 90, 100);
                 line-height: 1.5;
                 text-align: left;
             }
             .title__name {
-                font-size: 28px;
+                font-size: rem(28px);
                 font-family: "Roboto";
                 color: rgb(69, 90, 100);
                 line-height: 1.143;
                 text-align: center;
-                margin-bottom: 10px;
-                margin-top: 30px;               
+                margin-bottom: rem(10px);
+                margin-top: rem(30px);               
             }
 
         }
@@ -116,7 +118,7 @@ ul {
     align-items: flex-start;
     justify-content: flex-start;
     .mywork__item {
-        margin-right: 40px;
+        margin-right: rem(40px);
     }
 
 }

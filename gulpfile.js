@@ -8,6 +8,10 @@ const browserSync = require('browser-sync').create();
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+
 // const svgSprite = require('gulp-svg-sprite');
 
 
@@ -37,6 +41,17 @@ const paths = {
     },
 }
 
+// gulp postcss
+gulp.task('css', function () {
+    var plugins = [
+        autoprefixer({browsers: ['last 2 version']}),
+        cssnano()
+    ];
+    return gulp.src('./build/assets/styles/app.min.css')
+        .pipe(postcss(plugins))
+        .pipe(rename('appOut.css'))
+        .pipe(gulp.dest('./build/assets/styles/'));
+});
 
 // просто переносим картинка 
 function images(){

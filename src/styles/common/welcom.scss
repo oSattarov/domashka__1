@@ -1,3 +1,5 @@
+@import '../misc/media';
+
 .content {
     display: flex;
     flex: wrap;
@@ -7,18 +9,18 @@
 }
 
 .welcom__link {
-    font-size: 16px;
+    font-size: rem(16px);
     font-family: "Roboto";
     color: rgb(255, 255, 255);
     line-height: 2.257;
     text-align: center;
-    border: 1.5px solid #fff;
-    border-radius: 5px;
-    padding: 7px 14px;
+    border: 1.rem(5px) solid #fff;
+    border-radius: rem(5px);
+    padding: rem(7px) rem(14px);
     text-decoration: none;
     margin-left: auto;
     &:hover {
-        border: 1.5px solid #149e8c;
+        border: rem(1.5px) solid #149e8c;
         color: #00bfa5;
     }
 }
@@ -30,20 +32,20 @@
     flex: wrap;
     align-items: center;
     flex-direction: column;
-    width: 380px;
+    width: rem(380px);
     background: rgba($color: #e5efec, $alpha: 0.7);
-    border-radius: 7px;
-    padding-top: 45px;
+    border-radius: rem(7px);
+    padding-top: rem(45px);
     
 }
 .info__avatar {
-    width: 145px;
-    height: 145px;
+    width: rem(145px);
+    height: rem(145px);
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     .info__avatar-pic {
-        height: 150px;
+        height: rem(150px);
         width: auto;
         transform: rotate(180deg);
     }
@@ -52,17 +54,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     .info__title-name {
-        margin-bottom: 10px;
-        font-size: 28px;
+        margin-bottom: rem(10px);
+        font-size: rem(28px);
         font-family: "Roboto";
         color: rgb(69, 90, 100);
         line-height: 1.214;
         text-align: center;
     }
     .info__title-text {
-        font-size: 16px;
+        font-size: rem(16px);
         font-family: "Roboto";
         color: rgba(69, 90, 100, 0.8);
         line-height: 1.5;
@@ -74,7 +76,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     .info__link-social {
         text-decoration: none;
         
@@ -89,11 +91,11 @@
     flex-wrap: wrap;
     
     .info__button {
-        font-size: 16px;
+        font-size: rem(16px);
         font-family: "Roboto";
         color: rgb(255, 255, 255);
         line-height: 2.25;
-        padding: 10px;
+        padding: rem(10px);
         flex-grow: 1;
         background: rgba($color: #00bfa5, $alpha: 0.5);
         text-decoration: none;
@@ -103,21 +105,21 @@
     }
 }
 .info__button{
-    border-bottom-left-radius: 7px;
+    border-bottom-left-radius: rem(7px);
     position: relative;
     flex-grow: 2;
-    border-right: 2px solid rgb(154, 172, 173);
+    border-right: rem(2px) solid rgb(154, 172, 173);
     &:nth-child(2) {
         border-bottom-left-radius: 0;
     }
     &:last-child {
         border-bottom-left-radius: 0;
-        border-bottom-right-radius: 7px;
+        border-bottom-right-radius: rem(7px);
         border-right: none;
     }
 }
 .welcom__foot-text {
-    font-size: 15.771px;
+    font-size: rem(16px);
     font-family: "Roboto";
     color: rgb(255, 255, 255);
     line-height: 6.285;

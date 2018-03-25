@@ -1,3 +1,5 @@
+@import '../misc/media';
+
 .about {
     display: flex;
     align-items: center;
@@ -13,22 +15,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: rem(70px);
 }
 .dev__desc-avatar {
-    width: 145px;
-    height: 145px;
+    width: rem(145px);
+    height: rem(145px);
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     .dev__desc-pic {
-        height: 150px;
+        height: rem(150px);
         width: auto;
         transform: rotate(180deg);
     }
 }
 .dev__desc-name {
-    font-size: 35px;
+    font-size: rem(35px);
     font-family: "Roboto";
     color: rgb(255, 255, 255);
     line-height: 2.832;
@@ -36,7 +38,7 @@
             
 }
 .dev__desc-desc {
-    font-size: 16px;
+    font-size: rem(16px);
     font-family: "Roboto";
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
@@ -45,5 +47,5 @@
 }
 .down {
     text-align: center;
-    margin-top: 150px;
+    margin-top: rem(150px);
 }

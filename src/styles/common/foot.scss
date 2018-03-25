@@ -1,3 +1,5 @@
+@import '../misc/media';
+
 a {
     text-decoration: none;
 }
@@ -8,8 +10,8 @@ a {
     flex-direction: column;
     background: rgba($color: #000000, $alpha: 0.7);
     width: 100%;
-    padding: 10px 15px;
-    margin-top: -120px;
+    padding: rem(10px) rem(15px);
+    margin-top: rem(-120px);
     box-sizing: border-box;
     .foot__list {
         width: 100%;
@@ -22,9 +24,9 @@ a {
     display: flex;
     align-items: center;
     .footmenu__item {
-        margin-right: 20px;
+        margin-right: rem(20px);
         .footmenu__link {
-            font-size: 16px;
+            font-size: rem(16px);
             font-family: "Roboto";
             color: rgb(255, 255, 255);
             line-height: 1.502;
@@ -33,15 +35,15 @@ a {
     }
 }
 .foot__social-list {
-    width: 150px;
+    width: rem(150px);
     display: flex; 
     align-items: center;
     justify-content: space-around;
     .foot__social-item {
-        width: 40px;
-        height: 40px;
+        width: rem(40px);
+        height: rem(40px);
         border-radius: 50%;
-        border: 1px solid #fff;
+        border: rem(1px) solid #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,16 +56,16 @@ a {
     align-items: center;
     justify-content: space-between;
     .foot__desc-text {
-        width: 585px;
-        font-size: 13px;
+        width: rem(585px);
+        font-size: rem(13px);
         font-family: "Roboto";
         color: rgba(255, 255, 255, 0.502);
         line-height: 1.5;
         text-align: left;
     }
     .foot__desc-info {
-        width: 400px;
-        font-size: 13px;
+        width: rem(400px);
+        font-size: rem(13px);
         font-family: "Roboto";
         color: rgba(255, 255, 255, 0.502);
         line-height: 1.502;
@@ -72,7 +74,7 @@ a {
 }
 .line {
     width: 101%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: rem(10px);
+    margin-top: rem(10px);
     
 }

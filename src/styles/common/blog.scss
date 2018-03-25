@@ -1,3 +1,5 @@
+@import '../misc/media';
+
 .block {
     width: 100%;
     position: relative;
@@ -5,7 +7,7 @@
         content: "";
         display: block;
         width: 100%;
-        height: 130px;
+        height: rem(130px);
         position: relative;
         
     }
@@ -15,7 +17,7 @@
         align-items: flex-start;
         width: 100%;
         box-sizing: border-box;
-        padding: 20px;
+        padding: rem(20px);
     }
 }
 .block__nav {
@@ -30,28 +32,28 @@
         width: 100%;
         flex-direction: column;
         .block__item {
-            margin-bottom: 10px;
+            margin-bottom: rem(10px);
             display: flex;
             align-items: center;
             justify-content: flex-end;
             
             .block__link {
-                font-size: 16px;
+                font-size: rem(16px);
                 font-family: "Roboto";
                 line-height: 1.6;
                 color: rgb(69, 90, 100);
                 text-align: right;
-                height: 45px;
-                padding-right: 10px;
+                height: rem(45px);
+                padding-right: rem(10px);
                 &:hover{
                     color: #00bfa5;
-                    border-right: 2px solid #00bfa5;
+                    border-right: rem(2px) solid #00bfa5;
                 }  
                 
             }
             .active {
                 color: #00bfa5;
-                border-right: 2px solid #00bfa5;   
+                border-right: rem(2px) solid #00bfa5;   
             }
         }
     }
@@ -64,7 +66,7 @@
     width: 63%;
 }
 .block__title {
-    font-size: 35px;
+    font-size: rem(35px);
     font-family: "BERNIERRegular";
     color: rgb(69, 90, 100);
     line-height: 1.171;
@@ -72,23 +74,23 @@
         
 }
 .block__data {
-    font-size: 16px;
+    font-size: rem(16px);
     font-family: "Roboto";
     color: rgba(0, 191, 165, 0.702);
     line-height: 2.563;
     text-align: left;
-    margin: 15px 0;
+    margin: rem(15px) 0;
 }
 .block__text {
-    font-size: 16px;
+    font-size: rem(16px);
     font-family: "Roboto";
     color: rgb(69, 90, 100);
     line-height: 1.625;
     text-align: left;
-    margin-bottom: 15px; 
+    margin-bottom: rem(15px); 
 }
 .block__line {
     width: 80%;
-    border: 2px solid #f5f2f0;
-    margin: 50px 0;
+    border: rem(2px) solid #f5f2f0;
+    margin: rem(50px) 0;
 }

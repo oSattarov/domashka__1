@@ -1,3 +1,7 @@
+$retina: 1800px;
+$tablets: 768px;
+$phones: 480px;
+
 @mixin retina {
     @media screen and (max-width: $mini) {
         @content;        

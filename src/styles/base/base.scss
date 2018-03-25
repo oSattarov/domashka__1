@@ -1,3 +1,4 @@
+@import '../misc/media';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,7 +48,7 @@ html, body {
         background-size: cover;
         .content {
             width: 100%;
-            padding: 10px 15px;
+            padding: rem(10px 15px);
             
         }
         

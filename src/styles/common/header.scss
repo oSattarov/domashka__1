@@ -1,9 +1,11 @@
+@import '../misc/media';
+
 .hero {
     position: relative;
     width: 100%;
-    min-height: 650px;
+    min-height: rem(650px);
     background-image: url("../images/login.jpg");
-    padding: 10px 0;
+    padding: rem(10px) 0;
     display: flex;
     flex-direction: column;
     .hero__header {
@@ -16,7 +18,7 @@
         margin: 0 auto;
     }
     .social__list {
-        width: 200px;
+        width: rem(200px);
         list-style: none;
         display: flex;
         align-items: center;
@@ -25,24 +27,24 @@
 
             .social__link {
                 text-decoration: none;
-                height: 35px;
-                width: 35px;
+                height: rem(35px);
+                width: rem(35px);
                 
             }
         }
     }
     .hero__menu {
         display: inline-flex;
-        margin-right: 20px;
-        height: 35px;
+        margin-right: rem(20px);
+        height: rem(35px);
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         .drop {
-            width: 45px;
-            height: 7px;
+            width: rem(45px);
+            height: rem(7px);
             background: #fff;
-            border-radius: 3px;
+            border-radius: rem(3px);
         }
     }
 }
