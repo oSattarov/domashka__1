@@ -1,9 +1,13 @@
-$retina: 1800px;
-$tablets: 768px;
+$retina: 1200px;
+$tablets: 900px;
 $phones: 480px;
 
+@function rem ($px) {
+    @return $px / 16px + 0rem;
+}
+
 @mixin retina {
-    @media screen and (max-width: $mini) {
+    @media screen and (max-width: $retina) {
         @content;        
     }
 }

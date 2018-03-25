@@ -12,7 +12,6 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
-// const svgSprite = require('gulp-svg-sprite');
 
 
 
@@ -83,20 +82,8 @@ function server(){
 
 //sprite
 // function svg() {
-//     return gulp.src('./src/images/**/*.svg')
-//         .pipe(svgmin({
-//             js2svg: {
-//                 pretty: true
-//             }
-//         }))        
-//         .pipe(cheerio({
-//             run: function ($) {
-//                 $('[fill]').removeAttr('fill');
-//                 $('[stroke]').removeAttr('stroke');
-//                 $('[style]').removeAttr('style');
-//             }
-//         }))
-//         .pipe(replace('&gt;', '>'))
+//     return gulp.src('./src/images/**/*.svg')    
+        
 //         .pipe(svgSprite({
 //             mode: {
 //                 symbol: {

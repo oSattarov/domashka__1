@@ -16,6 +16,15 @@
     .hero__blog {
         width: 70%;
         margin: 0 auto;
+        @include retina {
+            width: 100%;
+        }
+        @include tablets {
+            width: 100%;
+        }
+        @include phones {
+            width: 100%;
+        }
     }
     .social__list {
         width: rem(200px);
@@ -48,7 +57,17 @@
         }
     }
 }
-
+.down {
+    text-align: center;
+    margin-top: rem(150px);
+    display: block;
+}
+.block__down {
+    display: none;
+    @include tablets {
+        display: block;
+    }
+}
 
 .box {
     display: block;
@@ -63,8 +82,8 @@
 }
   
 .traingle .left-traingle{
-    fill: #faf8f0;
+    fill: #efeee9;
 }
 .traingle .right-traingle{
-    fill: #faf8f0;
+    fill: #efeee9;
 }

@@ -7,8 +7,11 @@
         content: "";
         display: block;
         width: 100%;
-        height: rem(130px);
+        height: rem(120px);
         position: relative;
+        @include tablets {
+            height: rem(160px);
+        }
         
     }
     .block-container {
@@ -18,6 +21,8 @@
         width: 100%;
         box-sizing: border-box;
         padding: rem(20px);
+        background-color: #efeee9;
+       
     }
 }
 .block__nav {
@@ -25,36 +30,44 @@
     position: relative;
     display: flex;
     margin-right: 4%;
+    @include retina {
+        margin-right: 2%;
+        width: 23%;
+    }
+    @include tablets {
+        display: none;
+    }
     .block__list {
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
         width: 100%;
         flex-direction: column;
+        align-items: flex-end;
         .block__item {
             margin-bottom: rem(10px);
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: flex-end;
-            
+            height: rem(45px);
             .block__link {
                 font-size: rem(16px);
                 font-family: "Roboto";
-                line-height: 1.6;
+                line-height: 1.2;
                 color: rgb(69, 90, 100);
                 text-align: right;
-                height: rem(45px);
                 padding-right: rem(10px);
                 &:hover{
                     color: #00bfa5;
-                    border-right: rem(2px) solid #00bfa5;
                 }  
                 
             }
-            .active {
-                color: #00bfa5;
-                border-right: rem(2px) solid #00bfa5;   
+            @include retina {
+                line-height: 1;
+                font-size: rem(14px);
             }
+        }    
+        .active {
+            border-right: rem(2px) solid #00bfa5;  
+            color: #00bfa5;
         }
     }
 }
@@ -64,6 +77,15 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 63%;
+    @include tablets {
+        width: 96%;
+        margin: auto;
+    }
+    &:last-child {
+        @include tablets {
+            margin-bottom: rem(30px);
+        }
+    }
 }
 .block__title {
     font-size: rem(35px);
@@ -89,8 +111,21 @@
     text-align: left;
     margin-bottom: rem(15px); 
 }
+.block__images {
+    width: 100%;
+    height: 118px;
+    display: flex;
+    .block__images-pic {
+        background-size: cover;
+        width: 100%;
+    }
+}
+
 .block__line {
     width: 80%;
-    border: rem(2px) solid #f5f2f0;
+    border: rem(2px) solid #ddd7d3;
     margin: rem(50px) 0;
+    @include tablets {
+        width: 100%;
+    }
 }

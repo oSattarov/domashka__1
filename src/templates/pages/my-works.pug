@@ -47,13 +47,11 @@ block content
                             svg.icons-link(width='20', height='19', fill='#fff')
                                 use(xlink:href='img/symbol/sprite.svg#icons--link')
                         div.slider__link-text Посмотреть сайт
-            
-            div.slider__info 
-                div.slider__info-pic 
-                    img.slider__info-images(src="assets/images/unit.png", alt="")
-                div.slider__info-slider 
-                    img(src="assets/images/imgloft2.jpg", alt="").slider__info-img 
-                    img(src="assets/images/imgloft3.jpg", alt="").slider__info-img         
+            div.slider__info-pic 
+                img.slider__info-images(src="assets/images/unit.png", alt="")
+            div.slider__info-slider 
+                img(src="assets/images/imgloft2.jpg", alt="").slider__info-img 
+                img(src="assets/images/imgloft3.jpg", alt="").slider__info-img         
     section.section.reviews  
         div.reviews__content-title 
             h1.reviews__title - что обо мне - говорят 
@@ -80,7 +78,7 @@ block content
             div.btn 
                 button(type="submit").myform__btn.first Отправить
                 button(type="reset").myform__btn.last Очистить
-        div.down.up 
+        div.up 
                 img.down__icon(src="assets/images/portf_arrow_up.svg")
     footer.footer
         ul.foot__list 
@@ -98,13 +96,13 @@ block content
                 ul.foot__social-list 
                     li.foot__social-item 
                         a(href="#").foot__link 
-                            img(src="assets/images/vk.svg", alt="")
+                            img(src="assets/images/vk.svg", alt="").foot__link-pic
                     li.foot__social-item 
                         a(href="#").foot__link 
-                            img(src="assets/images/github.svg", alt="")
+                            img(src="assets/images/github.svg", alt="").foot__link-pic
                     li.foot__social-item 
                         a(href="#").foot__link 
-                            img(src="assets/images/in.svg", alt="")
+                            img(src="assets/images/in.svg", alt="").foot__link-pic
         hr.line
         div.foot__descc 
             div.foot__desc-text Я веб-разработчик из Андижане, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 

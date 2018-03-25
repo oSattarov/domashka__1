@@ -5,10 +5,32 @@
     min-height: rem(650px);
     display: flex;
     background: #efeee9;
+    flex-wrap: wrap;
+    @include tablets {
+        min-height: 100%;
+    }
+    @include phones {
+        min-height: 100%;
+    }
+   
     .about__mywork {
         width: rem(1800px);
         display: flex;
         align-items: flex-start;
+        background-color: #efeee9;
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+        }
+        
+        @include phones {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+        }
         .mywork__desc {
             position: relative;
             display: flex;
@@ -16,29 +38,98 @@
             padding: 0 rem(10px);
             align-items: flex-start;
             justify-content: flex-start;
-            .title-1 {
+            background-color: #efeee9;
+            // flex-wrap: wrap;
+            @include retina {
+                flex-direction: column;
+                align-items: center;
                 width: 50%;
-                font-size: rem(63px);
-                font-family: "Roboto";
-                color: rgb(55, 62, 66);
-                line-height: 1.048;
-                text-align: center;
-                margin-top: 0;
+            }
+            @include tablets {
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                width: 70%;
+            }
+            
+            @include phones {
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                width: 90%;
+            }
+            .mywork__desc-title {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include tablets {
+                    width: 50%;
+                    height: rem(100px);
+                    background-image: url('../images/works_header.svg');
+                    background-size: 100%;
+                }
+                .title-1 {
+                    
+                    font-size: rem(61px);
+                    font-family: "BERNIERRegular";
+                    color: rgb(55, 62, 66);
+                    line-height: 1.048;
+                    text-align: center;
+                    @include retina {
+                        width: 100%;
+                        font-size: rem(40px);
+                    }
+                    @include tablets {
+                        width: 100%;
+                        font-size: rem(50px);
+                    }
+                    
+                    @include phones {
+                        width: 100%;
+                        font-size: rem(50px);
+                    }
+                }
             }
             .nav {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                @include retina {
+                    width: 80%;
+                    margin-bottom: rem(50px);
+                }
+                @include tablets {
+                    width: 100%;
+                    margin-bottom: rem(50px);
+                }
+                
+                @include phones {
+                    width: 100%;
+                    margin-bottom: rem(50px);
+                }
                 .nav__avatar {
                     width: 100%;
                     height: rem(300px);
                     overflow: hidden;
+                    display: flex;
+                    @include tablets {
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: rem(20px);
+                        height: rem(420px);
+                    }
+                    @include phones {
+                        align-items: center;
+                        justify-content: center;
+                        width: 80%; 
+                    }
                     .nav__avatar-picc {
-                        height: rem(300px);
-                        width: auto;
+                        width: 100%;
                         transform: rotate(180deg);
-                        
+                        background-size: cover;
+                         
                     }
                 }
                 .nav__desc {
@@ -47,10 +138,10 @@
                     .title-3 {
                         text-align: center;
                         font-size: rem(35px);
-                        font-family: "Roboto";
+                        font-family: "BERNIERRegular";
                         color: rgb(69, 90, 100);
                         line-height: 1.171;
-                        
+                        margin-bottom: rem(16px);
                     }
                     .nav__text {
                         font-size: rem(16px);
@@ -71,24 +162,39 @@
             flex-direction: column;
             width: 50%;
             height: 100%;
-            padding: 0 rem(20px);
+            padding: 0 rem(20px) rem(50px);
             align-items: flex-start;
             justify-content: flex-start;
+            @include tablets {
+                width: 100%;
+                padding: rem(50px) 15%;
+                align-items: center;
             }
-            &:last-child {
-                margin-bottom: rem(50px);
+            @include phones {
+                width: 100%;
+                padding: rem(50px) 15%;
+                align-items: center;
             }
             .mywork__title {
-                width: rem(400px);
+                width: 50%;
                 font-size: rem(35px);
-                font-family: "Roboto";
+                font-family: "BERNIERRegular";
                 color: rgb(69, 90, 100);
                 line-height: 1.171; 
                 margin: auto;
                 text-align: center;
                 margin-bottom: rem(10px);  
                 margin-top:0; 
-                text-transform: uppercase;                              
+                text-transform: uppercase; 
+                @include retina {
+                    width: rem(320px);
+                }
+                @include tablets {
+                    width: rem(300px);
+                }   
+                @include phones {
+                    width: 80%;
+                }                         
             }
             .mywork__text {
                 font-size: rem(16px);
@@ -103,7 +209,7 @@
                 color: rgb(69, 90, 100);
                 line-height: 1.143;
                 text-align: center;
-                margin-bottom: rem(10px);
+                margin-bottom: rem(20px);
                 margin-top: rem(30px);               
             }
 
@@ -111,14 +217,40 @@
 
     }
     
-
+}
 ul {
     list-style: none;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     .mywork__item {
+        width: rem(110px);
+        height: rem(110px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-right: rem(40px);
+        &:last-child {
+            margin-right: 0;
+        }
+        @include retina {
+            width: rem(90px);
+            height: rem(90px);
+            margin-right: rem(20px);
+
+        }
+        @include tablets {
+            width: rem(100px);
+            height: rem(100px);
+        }
+        @include phones {
+            width: rem(70px);
+            height: rem(70px);
+        }
+        .mywork__item-pic{
+            background-size: cover;
+            width: 100%;
+        }
     }
 
 }

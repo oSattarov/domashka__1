@@ -23,9 +23,6 @@ body {
     padding: 0;
     line-height: 1.42;
 
-    @include tablets {
-        font-size: 14px;
-    }
 }
 
 html, body {
@@ -34,6 +31,16 @@ html, body {
     padding: 0;
     margin: 0;
     background: #ccc;
+    @include retina {
+        font-size: rem(16px);
+    }
+    @include tablets {
+        font-size: rem(14px);
+      }
+    
+      @include phones {
+        font-size: rem(12px);
+      }
 }
 
 .wrapper {
