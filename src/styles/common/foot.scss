@@ -46,6 +46,9 @@ a {
             color: rgb(255, 255, 255);
             line-height: 1.502;
             text-align: left;
+            &:hover {
+                color: #00bfa5;
+            }
         }
     }
 }
@@ -68,10 +71,17 @@ a {
         @include phones {
             margin-top: rem(10px);
         }
-        .foot__link-pic {
-            width: rem(27px);
-            height: rem(27px);
+        .foot__link {
+            opacity: 0.4;
+            &:hover{
+                opacity: 1;
+            }
+            .foot__link-pic {
+                width: rem(27px);
+                height: rem(27px);
+            }
         }
+        
     }
 }
 

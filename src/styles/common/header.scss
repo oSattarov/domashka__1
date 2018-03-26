@@ -1,6 +1,22 @@
 @import '../misc/media';
 
 .hero {
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url('../images/works_header.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 17%;
+        left: 32%;
+        width: 35%;
+        height: 180px;
+        z-index: 2;
+        opacity: 0.3;
+    }
+}
+.hero {
     position: relative;
     width: 100%;
     min-height: rem(650px);
@@ -38,7 +54,12 @@
                 text-decoration: none;
                 height: rem(35px);
                 width: rem(35px);
-                
+                .social__link--pic{
+                    opacity: 0.4;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
@@ -49,6 +70,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        opacity: 0.4;
+        &:hover {
+            opacity: 1;
+        }
         .drop {
             width: rem(45px);
             height: rem(7px);
@@ -61,6 +86,12 @@
     text-align: center;
     margin-top: rem(150px);
     display: block;
+    .down__icon {
+        opacity: 0.4;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 .block__down {
     display: none;

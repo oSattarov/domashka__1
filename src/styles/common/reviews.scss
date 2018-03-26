@@ -15,9 +15,7 @@
         padding-bottom: rem(200px);
     }
     .reviews__content-title {
-        background-image: url('../images/works_header.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
+        position: relative;
         width: 35%;
         margin-bottom: rem(50px);
         @include retina {
@@ -36,6 +34,19 @@
             color: rgb(55, 62, 66);
             line-height: 1.048;
             text-align: center;
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 450px;
+                height: 150px;
+                background-image: url('../images/works_header.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.3;
+            }
         }
     }
     .reviews__list {
@@ -169,6 +180,10 @@
 }
 .up {
     margin: rem(50px) 0 rem(30px) 0;
+    opacity: 0.4;
+    &:hover {
+        opacity: 1;
+    }
     .down__icon {
         width: rem(24px);
         height: rem(24px);

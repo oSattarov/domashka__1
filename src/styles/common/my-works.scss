@@ -3,20 +3,23 @@
 .work-slider {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     background: #efeee9;
     overflow: hidden;
     .slider__content-title {
-        background-image: url('../images/works_header.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 50%;
+        position: relative;
+        display: flex;
+        width: 30%;
+        @include retina {
+            width: rem(400px);
+        }
         @include tablets {
             width: rem(400px);
         }
         @include phones {
             width: 75%;
+            margin-bottom: rem(10px);
         }
         .slider__title {
             font-size: rem(63px);
@@ -24,7 +27,19 @@
             color: rgb(55, 62, 66);
             line-height: 0.889;
             text-align: center;
-           
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 450px;
+                height: 150px;
+                background-image: url('../images/works_header.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.3;
+            }
         }
     }
 }
@@ -33,19 +48,19 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: rem(570px);
+    min-height: rem(500px);
     box-sizing: border-box;
     flex-wrap: wrap;
-    @include retina {
-        height: rem(70px);
-    }
     @include tablets {
         flex-direction: column;
         flex-wrap: wrap;
+        height: rem(770px);
+        justify-content: space-between;
     }
     @include phones {
         flex-direction: column;
         flex-wrap: inherit;
+        margin-bottom: rem(10px);
 
     }
     .slider__work {
@@ -57,11 +72,12 @@
         background: #f0efe9;
         @include tablets {
             width: 100%;
-            padding: rem(30px) 0;
+            height: rem(300px);
+            padding: rem(10px) 0;
         }
         @include phones {
             width: 100%;
-            padding: rem(30px) 0;
+            padding: rem(20px) 0;
         }
         .slider__nav {
             width: 60%;
@@ -117,23 +133,30 @@
 .slider__info-pic {
     display: flex;
     background: #efebe0;
+    background-size: cover;
     width: 50%;
     height: 70%;
     align-items: center;
     justify-content: center;
+    @include retina {
+        height: rem(330px);
+        width: 50%;
+    }
     @include tablets{
         width: 100%;
-        height: rem(400px);
+        height: rem(300px);
         order: -1;
     }
     @include phones {
         width: 100%;
-        height: rem(400px);
+        height: rem(300px);
         order: -1;
     }
     .slider__info-images {
-        width: rem(600px);
-        background-size: 100%;
+        max-height: 90%;
+        @include retina {
+            max-width: 100%;
+        }
     }
 }
 .slider__info-slider {
@@ -142,13 +165,19 @@
     width: 50%;
     height: 30%;
     margin-left: auto;
+    @include retina {
+        height: rem(170px);
+        width: 50%;
+        // margin-left: auto;
+    }
     @include tablets {
         width: 100%;
-        height: 50%;
+        height: rem(150px);
     }
     @include phones {
         width: 100%;
-        height: 50%;
+        height: rem(150px);
+        // margin-bottom: rem(20px);
     }
     .slider__info-img {
         width: 50%;

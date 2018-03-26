@@ -46,6 +46,8 @@ html, body {
 .wrapper {
     max-width: 1800vh;
     width: 100%;
+    display: flex;
+    position: relative;
     .container {
         display: flex;
         min-height: 100vh;
