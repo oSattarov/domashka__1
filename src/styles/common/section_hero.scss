@@ -10,11 +10,26 @@
     position: relative;
 }
 
-// info block
+// info portfolio 
+.portfolio {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    opacity: 0.3;
+    .portfolio__pic {
+        max-width: 100%;
+    }
+}
+
+// info user
 .user{
     position: absolute;
     display: flex;
-    flex: wrap;
+    width: 50%;
+    padding: rem(20px);
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -36,18 +51,29 @@
     font-size: rem(35px);
     font-family: "Roboto";
     color: rgb(255, 255, 255);
-    line-height: 2.832;
     text-align: center;
+    @include tablets {
+        font-size: rem(24px);
+    }
+    @include phones {
+        font-size: rem(22px);
+        margin-bottom: rem(20px);
+    }
             
 }
 .user__text {
     font-size: rem(16px);
     font-family: "Roboto";
     color: rgba(255, 255, 255, 0.8);
-    line-height: 1.5;
     text-align: center;
-         
+    @include phones {
+        font-size: rem(13px);
+    }   
 }
+
+
+
+// down 
 .down {
     text-align: center;
     margin-top: rem(150px);

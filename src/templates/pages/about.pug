@@ -4,9 +4,9 @@ block variables
     - var title = 'Обо мне' 
 
 block content 
-    div.wrapper
-        section.section.hero.hero__works 
-            div.hero__header 
+    section.section__hero
+        div.hero.hero__works 
+            div.hero__header.hero__blog
                 ul.social__list 
                     li.social__item 
                         a(href="#").social__link
@@ -21,17 +21,19 @@ block content
                     div.drop 
                     div.drop 
                     div.drop
-            div.dev__desc 
-                div.dev__desc-avatar
-                    img(src="assets/images/olim.jpg", alt="").dev__desc-pic
-                div.dev__desc-name Саттаров Олимжон
-                div.dev__desc-desc Личный сайт веб разработчика
-            div.down 
+            div.down.block__down
                 img.down__icon(src="assets/images/arrow_down.svg") 
             .box
                 svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
                     polygon.left-traingle(points='0,0   0,86   500.8,86   500.8,75.5')
-                    polygon.right-traingle(points='1000,0   1000,86   500,86   500,75.5')
+                    polygon.right-traingle(points='1000,0   1000,86   500,86   500,75.5') 
+        div.portfolio
+            img(src="assets/images/portfolio_header.svg", alt="").portfolio__pic
+        div.user     
+            div.user__avatar
+                img(src="assets/images/olim.jpg", alt="").user__pic
+            div.user__name Саттаров Олимжон
+            div.user__text Личный сайт веб разработчика
     section.my__work
         div.about__mywork 
             div.mywork__desc 
