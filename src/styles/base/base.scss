@@ -44,20 +44,19 @@ html, body {
 }
 
 .wrapper {
-    max-width: 1800vh;
-    width: 100%;
+    max-width: 1800px;
     display: flex;
     position: relative;
     .container {
         display: flex;
         min-height: 100vh;
+        width: 100%;
         align-content: center;
         justify-content: space-around;
         background: url("../images/login.jpg");
         background-size: cover;
         .content {
             width: 100%;
-            padding: rem(10px 15px);
             
         }
         

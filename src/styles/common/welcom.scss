@@ -1,13 +1,8 @@
 @import '../misc/media';
 
-.content {
-    display: flex;
-    flex: wrap;
-    align-items: center;
+.welcom-content {
     justify-content: space-around;
-    flex-direction: column;
 }
-
 .welcom__link {
     font-size: rem(16px);
     font-family: "Roboto";
@@ -18,6 +13,7 @@
     border-radius: rem(5px);
     padding: rem(7px) rem(14px);
     text-decoration: none;
+    margin-right: 3%;
     margin-left: auto;
     &:hover {
         border: rem(1.5px) solid #149e8c;
@@ -36,7 +32,6 @@
     background: rgba($color: #e5efec, $alpha: 0.7);
     border-radius: rem(7px);
     padding-top: rem(45px);
-    
 }
 .info__avatar {
     width: rem(145px);

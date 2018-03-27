@@ -1,0 +1,54 @@
+@import '../misc/media';
+
+.section__hero {
+    max-width: 1800vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+// info block
+.user{
+    position: absolute;
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: rem(70px);
+}
+.user__avatar {
+    width: rem(145px);
+    height: rem(145px);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: rem(30px);
+    .user__pic {
+        height: rem(150px);
+        width: auto;
+        transform: rotate(180deg);
+    }
+}
+.user__name {
+    font-size: rem(35px);
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 2.832;
+    text-align: center;
+            
+}
+.user__text {
+    font-size: rem(16px);
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    text-align: center;
+         
+}
+.down {
+    text-align: center;
+    margin-top: rem(150px);
+}
