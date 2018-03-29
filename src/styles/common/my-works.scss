@@ -31,14 +31,17 @@
                 content: "";
                 position: absolute;
                 display: block;
-                width: 450px;
-                height: 150px;
+                width: rem(450px);
+                height: rem(150px);
                 background-image: url('../images/works_header.svg');
                 background-repeat: no-repeat;
                 background-size: 100%;
                 top: 0;
                 left: 0;
                 opacity: 0.3;
+                @include tablets {
+                    width: rem(400px);
+                }
             }
         }
     }

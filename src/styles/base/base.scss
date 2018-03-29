@@ -44,30 +44,47 @@ html, body {
 }
 
 .wrapper {
-    max-width: 1800px;
-    min-height: rem(650px);
+    max-width: rem(1800px);
+    height: 100vh;
     display: block;
     position: relative;
-    // .container {
-    //     display: flex;
-    //     min-height: 100vh;
-    //     width: 100%;
-    //     align-content: center;
-    //     justify-content: space-around;
-    //     background: url("../images/login.jpg");
-    //     background-size: cover;
-    //     .content {
-    //         width: 100%;
-            
-    //     }
-    //}    
+    overflow: hidden;
     .wrap__bg {
         position: absolute;
-        width: rem(1800px);
+        width: 100%;
         height: rem(770px);
         display: flex;
+        &:nth-child(2) {
+            top: 25%;
+        }
+        &:nth-child(3) {
+            top: 25%;
+        }
+        &:nth-child(4) {
+            top: 5%;
+        }
+        &:nth-child(5) {
+            top: 30%;
+        }
+        &:nth-child(6) {
+            top: 30%;
+        }
+        &:nth-child(7) {
+            transform: rotate(90deg);
+            top: 70%;
+        }
+        &:nth-child(8) {
+            top: 60%;
+        }
+        &:nth-child(9) {
+            top: 35%;
+        }
+        &:nth-child(10) {
+            top: 25%;
+        }
         .wrap__bg-pic {
             max-width: 100%;
+            min-height: rem(300px);
 
         }
     }

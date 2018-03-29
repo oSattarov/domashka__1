@@ -13,6 +13,7 @@ a {
     padding: rem(10px) rem(15px);
     margin-top: rem(-120px);
     box-sizing: border-box;
+    position: relative;
     @include retina {
         margin-top: rem(-120px);
     }
