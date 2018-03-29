@@ -1,7 +1,7 @@
 var parallax = (function (){
-    var bg = document.querySelector('.hero');
+    var bg = document.querySelector('.hero__header-img');
     var user = document.querySelector('.user');
-    var portfolio = document.querySelector('.portfolio');
+    var portfolio = document.querySelector('.portfolio__pic');
 
 
     return {
@@ -18,17 +18,19 @@ var parallax = (function (){
             style.webkitTransform = tr;
         },
 
-        init: function(wscroll){
-            this.move(bg, wscroll, 45);
-            this.move(portfolio, wscroll, 20);
-            this.move(user, wscroll, 3);
+        init: function(wScroll){
+            this.move(bg, wScroll, 45);
+            this.move(portfolio, wScroll, 20);
+            this.move(user, wScroll, 10);
         }
     }
-})
+}());
 
 
 window.onscroll = function () {
-    var wscroll = window.pageYOffset;
-
-    parallax.init(wscroll);
+    var wScroll = window.pageYOffset;
+    console.log(wScroll);
+    parallax.init(wScroll);
 }
+
+// module.exports = about;
