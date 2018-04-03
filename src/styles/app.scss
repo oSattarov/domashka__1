@@ -4,6 +4,7 @@
 //  base 
 @import 'base/fonts';
 @import 'base/base';
+@import 'base/cont-card';
 
 //config
 @import "config/mixins.scss";
@@ -28,5 +29,6 @@ $phones: 480px;
 @import 'common/header';
 @import 'common/reviews';
 @import 'common/section_hero';
+@import 'common/overlay';
 
 

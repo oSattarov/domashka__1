@@ -1,3 +1,7 @@
+/////////////        animatsia gore i text foto //////////
+
+
+
 var parallax = (function (){
     var bg = document.querySelector('.hero__header-img');
     var user = document.querySelector('.user');
@@ -34,3 +38,15 @@ window.onscroll = function () {
 }
 
 // module.exports = about;
+var linkLeft = document.getElementById('linkLeft');
+var welcomeLink = document.getElementById('welcomeLink');
+
+function flip() {
+    
+    var contCard = document.getElementsByClassName('cont-card')[0];
+    contCard.classList.toggle('flipped');
+    console.log('flip');
+    
+}
+linkLeft.addEventListener('click', flip);
+welcomeLink.addEventListener('click', flip);

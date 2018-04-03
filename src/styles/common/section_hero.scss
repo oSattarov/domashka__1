@@ -9,7 +9,41 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #71bda5, $alpha: 0.4);
+        transform: translateX(-101%);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #71bda5, $alpha: 0.9);
+        transform: translateX(101%);
+    }
+    
+
 }
+// // hero__menu :active 
+// .hero__menu:hover .section__hero:before {
+//     transform: translateX(-101%);
+//     transition: 0.5s;
+//     z-index: 66;
+// }
+// .hero__menu:hover .section__hero:after {
+//     transform: translateX(101%);
+//     transition: 0.5s;
+//     z-index: 88;
+// } 
+
 
 // info portfolio 
 .portfolio {

@@ -11,67 +11,68 @@ block content
             img(src="assets/images/lay9.png", alt="").wrap__bg-pic
         .wrap__bg
             img(src="assets/images/lay8.png", alt="").wrap__bg-pic
-        .wrap__bg
+        .wrap__bg#cloud__one
             img(src="assets/images/lay7.png", alt="").wrap__bg-pic
         .wrap__bg
             img(src="assets/images/lay6.png", alt="").wrap__bg-pic
         .wrap__bg
             img(src="assets/images/lay5.png", alt="").wrap__bg-pic
-        .wrap__bg
+        .wrap__bg#cloud__two
             img(src="assets/images/lay4.png", alt="").wrap__bg-pic
         .wrap__bg
             img(src="assets/images/lay3.png", alt="").wrap__bg-pic
         .wrap__bg
             img(src="assets/images/lay2.png", alt="").wrap__bg-pic
-        .wrap__bg
+        .wrap__bg#cloud__three
             img(src="assets/images/lay1.png", alt="").wrap__bg-pic
 
-            div.content.welcom-content 
-                a.welcom__link(href="index.html") Авторизоваться
-                div.cont-card
-                    div.card
-                        form.form 
-                            h1.title.title__form - АВТОРИЗУЙТЕСЬ -
-                            label(for="name").form__name 
-                                div.form__avatar 
-                                    img(src="assets/images/user.svg", alt="").form__img
-                                input(type="name" placeholder="Логин").input
-                            label(for="password").form__password
-                                div.form__avatar 
-                                    img(src="assets/images/key.svg", alt="").form__img
-                                input(type="password" placeholder="Пароль").input
-                            label.form__checkbox 
-                                input(name="check" type="checkbox").checkbox__elem 
-                                div.checkbox__fake 
-                                div.checkbox__title Я человек
-                            p.form__text Вы точно не робот?
-                            div.form-order    
-                                label.order__radio 
-                                    input(name="rad" type="radio").order__radio-elem
-                                    div.order__radio-fake 
-                                    div.order__radio-title Да
-                                label.order__radio 
-                                    input(type="radio" name="rad").order__radio-elem 
-                                    div.order__radio-fake 
-                                    div.order__radio-title  Не уверен
-                            div.form__btn
-                                a(href="welcome.html").form__button НА ГЛАВНАЯ
-                                a(href="#").form__button ВОЙТИ
-                        div.info 
-                            div.info__avatar 
-                                img(src="assets/images/olim.jpg", alt="").info__avatar-pic
-                            div.info__title 
-                                h1.info__title-name Саттаров Олимжон
-                                p.info__title-text Личный сайт веб разработчика
-                            div.info__link 
-                                a.info__link-social(href="#")
-                                    img(src="assets/images/vk.svg", alt="")
-                                a.info__link-social(href="#") 
-                                    img(src="assets/images/github.svg", alt="")
-                                a.info__link-social(href="#") 
-                                    img(src="assets/images/in.svg", alt="")
-                            div.info__btn
-                                a(href="my-works.html").info__button Мои работы
-                                a(href="about.html").info__button Обо мне
-                                a(href="blog.html").info__button Блог
-                 div.welcom__foot-text Саттаров Олимжон | создано с любовью | в LoftShool | 2018
+        .content.welcom-content 
+            a.welcom__link(href="#")#welcomeLink Авторизоваться
+            .cont-card
+                .card-log
+                    form.form 
+                        h1.title.title__form - АВТОРИЗУЙТЕСЬ -
+                        label(for="name").form__name 
+                            div.form__avatar 
+                                img(src="assets/images/user.svg", alt="").form__img
+                            input(type="name" placeholder="Логин").input
+                        label(for="password").form__password
+                            div.form__avatar 
+                                img(src="assets/images/key.svg", alt="").form__img
+                            input(type="password" placeholder="Пароль").input
+                        label.form__checkbox 
+                            input(name="check" type="checkbox").checkbox__elem 
+                            div.checkbox__fake 
+                            div.checkbox__title Я человек
+                        p.form__text Вы точно не робот?
+                        div.form-order    
+                            label.order__radio 
+                                input(name="rad" type="radio").order__radio-elem
+                                div.order__radio-fake 
+                                div.order__radio-title Да
+                            label.order__radio 
+                                input(type="radio" name="rad").order__radio-elem 
+                                div.order__radio-fake 
+                                div.order__radio-title  Не уверен
+                        div.form__btn
+                            a(href="#").form__button.leftt#linkLeft НА ГЛАВНАЯ
+                            a(href="#").form__button.rightt#linkRight ВОЙТИ
+                .card-wel
+                    form.info 
+                        div.info__avatar 
+                            img(src="assets/images/olim.jpg", alt="").info__avatar-pic
+                        div.info__title 
+                            h1.info__title-name Саттаров Олимжон
+                            p.info__title-text Личный сайт веб разработчика
+                        div.info__link 
+                            a.info__link-social(href="#")
+                                img(src="assets/images/vk.svg", alt="")
+                            a.info__link-social(href="#") 
+                                img(src="assets/images/github.svg", alt="")
+                            a.info__link-social(href="#") 
+                                img(src="assets/images/in.svg", alt="")
+                        div.info__btn
+                            a(href="my-works.html").info__button Мои работы
+                            a(href="about.html").info__button Обо мне
+                            a(href="blog.html").info__button Блог
+            .welcom__foot-text Саттаров Олимжон | создано с любовью | в LoftShool | 2018

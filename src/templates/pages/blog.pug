@@ -18,10 +18,7 @@ block content
                     li.social__item 
                         a(href="#").social__link
                             img(src="assets/images/in.svg", alt="").social__link--pic
-                div.hero__menu 
-                    div.drop 
-                    div.drop 
-                    div.drop
+                
             div.down.block__down
                 img.down__icon(src="assets/images/arrow_down.svg") 
             .box
@@ -35,6 +32,25 @@ block content
                 img(src="assets/images/olim.jpg", alt="").user__pic
             div.user__name - БЛОГ -
             div.user__text Статьи, которые я написал
+    div.btn_container#toggle.blog_btn__cont
+        span.btn_container__item.btn_container--top 
+        span.btn_container__item.btn_container--midless
+        span.btn_container__item.btn_container--bottom
+    .overlay#overlay
+        nav.overlay-menu 
+            ul.overlay-menu__list 
+                li.overlay-menu__item 
+                    a(href="#").overlay-menu__link о нас 
+                li.overlay-menu__item 
+                    a(href="#").overlay-menu__link бургеры
+                li.overlay-menu__item 
+                    a(href="#").overlay-menu__link команда
+                li.overlay-menu__item 
+                    a(href="#").overlay-menu__link меню
+                li.overlay-menu__item 
+                    a(href="#").overlay-menu__link отзывы
+                li.overlay-menu__item 
+                    a(href="#").overlay-menu__link контакты
     section.block 
         div.block-container
             div.block__nav 

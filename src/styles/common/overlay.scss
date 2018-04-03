@@ -1,0 +1,151 @@
+@import '../misc/media';
+
+$color-background: #080808;
+$color-main: #2e3133;
+$color-active: #fff;
+$color-link: #fff;
+
+$button-height: rem(27px);
+$button-width: rem(35px);
+
+
+////////////////   btn_container   ///////////////
+.btn_container {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+
+  &.btn_container--active {
+    opacity: 0.7;
+    .btn_container--top {
+      transform: translateY(rem(11px)) translateX(0) rotate(45deg);
+      border-radius: rem(5px);
+    }
+    .btn_container--middle {
+      opacity: 0;
+    }
+
+    .btn_container--bottom {
+      transform: translateY(rem(-11px)) translateX(0) rotate(-45deg);
+      border-radius: rem(5px);
+    }
+  }
+
+  .btn_container__item {
+    background: $color-active;
+    border: none;
+    height: rem(5px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: rem(11px);
+    }
+
+    &:nth-of-type(3) {
+      top: rem(22px);
+    }
+  }
+}
+
+.blog_btn__cont {
+  top: 5%;
+  right: 15%;
+}
+
+  ///////////  overlay   /////////////
+  
+.overlay {
+  position: fixed;
+  background: $color-main;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+
+  &.overlay--open {
+    opacity: .99;
+    visibility: visible;
+    height: 100%;
+
+    .overlay-menu__item {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+    }
+  }
+}
+
+.overlay-menu {
+  position: absolute;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: rem(50px);
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.overlay-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.overlay-menu__item {
+  display: block;
+  position: relative;
+  line-height: 1;
+  opacity: 0;
+  &:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    width: rem(5px);
+    height: rem(5px);
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.overlay-menu__link {
+  display: block;
+  font-family: "BERNIERRegular";
+  color: $color-link;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: rem(24px);
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.body-active-menu {
+  overflow: hidden;
+}
