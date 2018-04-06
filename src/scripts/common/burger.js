@@ -1,26 +1,34 @@
-let menu = (function() {
-    let button = document.querySelector('#toggle');
-    let menu = document.querySelector('#overlay');
-    let body = document.querySelector("body");
-    console.log(button);
-    console.log(menu);
-  
-    let toggleMenu = function(e) {
-      button.classList.toggle("btn_container--active");
-      menu.classList.toggle("overlay--open");
-      body.classList.toggle("body-active-menu");
-      console.log('overlay');
-    };
-  
-    let addListeners = function() {
-      button.addEventListener("click", toggleMenu);
+let menuClick = (function() {
+  let button = document.getElementById('toggle');
+  let menu = document.getElementById('overlay');
+  // let body = document.querySelector("body");
 
-    };
-  
-    return {
-      init: addListeners
-    };
+  let toggleMenu = function(e) {
+    button.classList.toggle("btn_container--active");
+    menu.classList.toggle("overlay--open");
+    // body.classList.toggle("body-active-menu");
+  };
+
+  let olimjon = function() {
+    button.addEventListener('click', toggleMenu);
+
+  };
+
+  return {
+    init: olimjon
+  };
 })();
   
-menu.init();
+menuClick.init();
   
+
+////////////////////////  put 2   ////////////////////////
+// let button = document.getElementById('toggle');
+// let menu = document.getElementById('overlay');
+
+// let toggleMenu = function(e) {
+//   button.classList.toggle("btn_container--active");
+//   menu.classList.toggle("overlay--open");
+// };
+
+// button.addEventListener('click', toggleMenu);

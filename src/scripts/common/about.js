@@ -2,19 +2,19 @@
 
 
 
-var parallax = (function (){
-    var bg = document.querySelector('.hero__header-img');
-    var user = document.querySelector('.user');
-    var portfolio = document.querySelector('.portfolio__pic');
+let parallax = (function (){
+    let bg = document.querySelector('.hero__header-img');
+    let user = document.querySelector('.user');
+    let portfolio = document.querySelector('.portfolio__pic');
 
 
     return {
         move: function(block, windowScroll, strafeAmount) {
-            var strafe = windowScroll / -strafeAmount + '%';
+            let strafe = windowScroll / -strafeAmount + '%';
 
-            var tr = 'translate3d(0,' + strafe + ',0)';
+            let tr = 'translate3d(0,' + strafe + ',0)';
 
-            var style = block.style;
+            let style = block.style;
 
             //style.top = strafe;
 
@@ -32,21 +32,27 @@ var parallax = (function (){
 
 
 window.onscroll = function () {
-    var wScroll = window.pageYOffset;
-    console.log(wScroll);
+    let wScroll = window.pageYOffset;
     parallax.init(wScroll);
 }
 
 // module.exports = about;
-var linkLeft = document.getElementById('linkLeft');
-var welcomeLink = document.getElementById('welcomeLink');
+let card = (function() {
+    let linkLeft = document.getElementById('linkLeft');
+    let welcomeLink = document.getElementById('welcomeLink');
+    let contCard = document.getElementsByClassName('cont-card')[0];
 
-function flip() {
-    
-    var contCard = document.getElementsByClassName('cont-card')[0];
-    contCard.classList.toggle('flipped');
-    console.log('flip');
-    
-}
-linkLeft.addEventListener('click', flip);
-welcomeLink.addEventListener('click', flip);
+    let flip = function() {
+        contCard.classList.toggle('flipped');
+        console.log('flip');
+    };
+    let addCard = function() {
+        linkLeft.addEventListener('click', flip);
+        welcomeLink.addEventListener('click', flip);
+    };
+
+    return {
+        init: addCard
+    }
+})();
+card.init();
